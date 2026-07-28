@@ -1,1 +1,9 @@
-alert("app.js 연결 성공!");
+document.addEventListener("DOMContentLoaded", () => {
+
+    const startBtn = document.querySelector("button");
+
+    startBtn.addEventListener("click", () => {
+        window.location.href = "home.html";
+    });
+
+});
