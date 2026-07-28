@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
-    const startBtn = document.querySelector("button");
+    const startBtn = document.getElementById("startBtn");
 
-    startBtn.addEventListener("click", () => {
+    startBtn.addEventListener("click", function () {
         window.location.href = "home.html";
     });
 
