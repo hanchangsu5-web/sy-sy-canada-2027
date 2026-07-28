@@ -1,71 +1,497 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SY & SY Canada 2027</title>
+
+<title>SY Family Canada 2027</title>
+
+<link rel="stylesheet" href="style.css">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
 
 body{
-    background:url("https://images.unsplash.com/photo-1503614472-8c93d56e92d?q=80&w=1600") center/cover no-repeat;
-    height:100vh;
+    margin:0;
+    padding:0;
+    background:#eef4fb;
+    font-family:"Pretendard","Noto Sans KR",sans-serif;
+    color:#333;
+}
+
+.hero{
+
+    background:linear-gradient(135deg,#1f78d1,#5aa8f5);
+
     color:white;
-}
 
-.overlay{
-    background:rgba(0,0,0,.45);
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
     text-align:center;
+
+    padding:70px 25px 60px;
+
 }
 
-h1{
-    font-size:42px;
-    margin-bottom:15px;
+.hero h1{
+
+    font-size:52px;
+
+    margin-top:18px;
+
+    margin-bottom:12px;
+
 }
 
-h2{
-    font-size:22px;
-    margin-bottom:40px;
-    font-weight:normal;
+.hero h2{
+
+    font-size:24px;
+
+    font-weight:500;
+
+    margin-bottom:20px;
+
 }
 
-button{
-    padding:18px 45px;
-    border:none;
-    border-radius:40px;
+.hero p{
+
+    font-size:18px;
+
+    opacity:.95;
+
+    line-height:1.7;
+
+}
+
+.start-btn{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:white;
+
+    color:#1f78d1;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
     font-size:20px;
-    cursor:pointer;
-    background:#ffffff;
-    color:#1b4d3e;
+
     font-weight:bold;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
 }
+
+.container{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:35px 20px;
+
+}
+
+.section-title{
+
+    font-size:34px;
+
+    color:#1f78d1;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    margin-bottom:28px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.intro{
+
+    font-size:19px;
+
+    line-height:1.9;
+
+}
+
+.intro strong{
+
+    color:#1f78d1;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:18px;
+
+}
+
+.day-card{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#333;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:22px;
+
+    transition:.25s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    border:3px solid transparent;
+
+}
+
+.day-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#2f83da;
+
+}
+
+.day-card h3{
+
+    color:#1f78d1;
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.day-card p{
+
+    line-height:1.8;
+
+}
+
+.ready{
+
+    background:#f5f7fa;
+
+    color:#999;
+
+}
+
+.ready h3{
+
+    color:#999;
+
+}
+
+.footer{
+
+    text-align:center;
+
+    color:#666;
+
+    padding:50px 20px;
+
+    font-size:16px;
+
+}
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero h2{
+
+font-size:20px;
+
+}
+
+.section-title{
+
+font-size:28px;
+
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div class="overlay">
+<div class="hero">
 
-<h1>🍁 SY & SY Canada 2027</h1>
+<div style="font-size:70px;">
+🇨🇦
+</div>
 
-<h2>세영 · 서윤 Family Adventure</h2>
+<h1>SY Family</h1>
 
-<button id="startBtn">여행 시작하기</button>
+<h2>CANADA 2027</h2>
+
+<p>
+
+Our Family Adventure
+
+<br><br>
+
+2027.07.24 ~ 2027.08.01
+
+</p>
+
+<a class="start-btn" href="#schedule">
+
+📖 여행 시작하기
+
+</a>
 
 </div>
-<script src="app.js"></script>
+
+<div class="container">
+
+<div class="card intro">
+
+<div class="section-title">
+
+✈ 여행 소개
+
+</div>
+
+<p>
+
+이번 여행은
+
+<strong>가족이 함께 만드는 기록</strong>입니다.
+
+<br><br>
+
+밴프의 거대한 자연,
+
+밴쿠버의 여유,
+
+그리고 함께 웃고 걸었던 시간들을
+
+하나의 여행책으로 남깁니다.
+
+<br><br>
+
+사진보다 오래 기억될 이야기를 담기 위해
+
+매일의 역사, 스토리, 여행팁, 그리고 우리만의 한 문장을 기록합니다.
+
+</p>
+
+</div>
+
+<div id="schedule" class="card">
+
+<div class="section-title">
+🗓 전체 일정
+</div>
+
+<div class="grid">
+
+<a class="day-card" href="day1.html">
+<h3>DAY 1</h3>
+<p>
+🇨🇦 캐나다와 첫 만남<br>
+Calgary → Canmore
+</p>
+</a>
+
+<a class="day-card" href="day2.html">
+<h3>DAY 2</h3>
+<p>
+🏔 밴프와 첫 만남<br>
+곤돌라 · 존스턴 캐년
+</p>
+</a>
+
+<a class="day-card" href="day3.html">
+<h3>DAY 3</h3>
+<p>
+🌄 모레인 호수와 레이크루이스<br>
+세계 최고의 풍경
+</p>
+</a>
+
+<div class="day-card ready">
+<h3>DAY 4</h3>
+<p>
+Icefields Parkway<br>
+Coming Soon
+</p>
+</div>
+
+<div class="day-card ready">
+<h3>DAY 5</h3>
+<p>
+Minnewanka Cruise<br>
+Coming Soon
+</p>
+</div>
+
+<div class="day-card ready">
+<h3>DAY 6</h3>
+<p>
+Canmore → Vancouver<br>
+Coming Soon
+</p>
+</div>
+
+<div class="day-card ready">
+<h3>DAY 7</h3>
+<p>
+Granville Island<br>
+Coming Soon
+</p>
+</div>
+
+<div class="day-card ready">
+<h3>DAY 8</h3>
+<p>
+Stanley Park<br>
+Coming Soon
+</p>
+</div>
+
+<div class="day-card ready">
+<h3>DAY 9</h3>
+<p>
+귀국<br>
+Coming Soon
+</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="section-title">
+🎒 여행 준비
+</div>
+
+<ul style="line-height:2;font-size:18px;">
+<li>📄 여권 · eTA 확인</li>
+<li>🚗 렌터카 예약</li>
+<li>🏨 숙소 주소 저장</li>
+<li>🌤 날씨 확인</li>
+<li>🥪 점심 도시락 준비</li>
+<li>📷 카메라 · 보조배터리</li>
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<div class="section-title">
+🗺 여행 지도
+</div>
+
+<p style="font-size:18px;line-height:1.8">
+
+Google My Maps와 여행 동선을
+이곳에서 확인합니다.
+
+<br><br>
+
+(추후 연결)
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="section-title">
+📸 여행 후 앨범
+</div>
+
+<p style="font-size:18px;line-height:1.8">
+
+매일 여행을 마친 후
+
+사진 한 장과
+
+우리 가족의 한 문장을
+
+기록하는 공간입니다.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="section-title">
+❤️ About
+</div>
+
+<p style="font-size:18px;line-height:2">
+
+이 여행책은
+
+단순한 일정표가 아니라
+
+우리 가족의 첫 캐나다 여행을
+
+오래 기억하기 위한 기록입니다.
+
+<br><br>
+
+"풍경보다 오래 남는 것은
+
+그날의 이야기."
+
+</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+Made with ❤️ by SY Family
+
+<br><br>
+
+Canada 2027 Travel Journal
+
+</div>
+
 </body>
+
 </html>
