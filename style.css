@@ -985,7 +985,25 @@ blockquote{
 
 }
 
+html, body{
+    overflow-x:hidden;
+    max-width:100%;
+}
 
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.card,
+.memory-box,
+.tip-box,
+blockquote,
+p,
+li{
+    word-break:keep-all;
+    overflow-wrap:break-word;
+}
 
 /* =======================================================
    END
