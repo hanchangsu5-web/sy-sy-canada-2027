@@ -1,1 +1,1 @@
-console.log("SY & SY Canada 2027");
+alert("app.js 연결 성공!");
