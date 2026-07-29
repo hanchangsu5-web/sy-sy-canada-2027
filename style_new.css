@@ -1,0 +1,414 @@
+/* =====================================================
+   SY & SY CANADA 2027
+   FINAL STYLE.CSS
+   ===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#eef5ff;
+    color:#333;
+    font-family:
+        "Pretendard",
+        "Noto Sans KR",
+        Arial,
+        sans-serif;
+    line-height:1.8;
+    overflow-x:hidden;
+}
+
+.container{
+    width:min(1100px,94%);
+    margin:auto;
+    padding:30px 0 60px;
+}
+
+/* =====================================================
+   DAY HERO
+   ===================================================== */
+
+.hero{
+
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
+    color:white;
+    text-align:center;
+
+    padding:70px 25px 60px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.18);
+
+}
+
+.hero-day{
+
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:2px;
+
+    opacity:.9;
+
+    margin-bottom:14px;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+    font-weight:800;
+
+    margin-bottom:12px;
+
+}
+
+.hero-route{
+
+    font-size:24px;
+
+    opacity:.95;
+
+    margin-bottom:25px;
+
+}
+
+.hero-info{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:28px;
+
+    flex-wrap:wrap;
+
+    font-size:18px;
+
+    opacity:.95;
+
+}
+
+.hero-info span{
+
+    background:rgba(255,255,255,.18);
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+}
+
+/* =====================================================
+   CARD
+   ===================================================== */
+
+.card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:32px;
+
+    margin:30px auto;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.card h2{
+
+    color:#1565c0;
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+    font-weight:800;
+
+}
+
+.card h3{
+
+    color:#2b2b2b;
+
+    font-size:24px;
+
+    margin:20px 0 12px;
+
+}
+
+.card p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    margin:12px 0;
+
+}
+
+.card ul,
+
+.card ol{
+
+    margin:15px 0 15px 28px;
+
+}
+
+.card li{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    margin:6px 0;
+
+}
+
+img{
+
+    width:100%;
+
+    border-radius:18px;
+
+    margin:20px 0;
+
+}
+
+/* =====================================================
+   INFO / TIP / MEMORY
+   ===================================================== */
+
+.info-box{
+
+    background:#eef7ff;
+
+    border-left:6px solid #2196f3;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    margin:22px 0;
+
+    line-height:2;
+
+    font-size:19px;
+
+}
+
+.tip-box{
+
+    background:#fff8e8;
+
+    border-left:6px solid #ffb300;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    margin:22px 0;
+
+    line-height:2;
+
+    font-size:19px;
+
+}
+
+.memory-box{
+
+    background:#f9fbff;
+
+    border:2px dashed #8ab9ff;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    margin-top:25px;
+
+    line-height:2;
+
+    font-size:20px;
+
+}
+
+blockquote{
+
+    background:#eef7ff;
+
+    border-left:6px solid #1976d2;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    margin:25px 0;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    font-style:italic;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+html{
+
+    font-size:clamp(15px,1vw + 12px,18px);
+
+}
+
+.container{
+
+    width:min(1000px,94%);
+
+    margin:auto;
+
+}
+
+.card{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
+
+.info-table{
+
+    width:100%;
+
+    table-layout:fixed;
+
+    border-collapse:collapse;
+
+}
+
+.info-table th,
+.info-table td{
+
+    padding:12px 10px;
+
+    word-break:keep-all;
+
+    overflow-wrap:break-word;
+
+    white-space:normal;
+
+    vertical-align:middle;
+
+}
+
+.photo{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+.hero h1{
+
+    font-size:clamp(2rem,4vw,3.3rem);
+
+}
+
+.hero-route{
+
+    font-size:clamp(1rem,2vw,1.4rem);
+
+}
+
+.hero-info{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+@media (max-width:768px){
+
+.card{
+
+    padding:22px;
+
+}
+
+.card h2{
+
+    font-size:1.6rem;
+
+}
+
+.card h3{
+
+    font-size:1.2rem;
+
+}
+
+.card p,
+.card li{
+
+    font-size:1rem;
+
+}
+
+.info-box,
+.tip-box,
+.memory-box{
+
+    padding:18px;
+
+}
+
+.info-table{
+
+    font-size:.92rem;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.card{
+
+    padding:18px;
+
+}
+
+.info-table th,
+.info-table td{
+
+    padding:9px 6px;
+
+    font-size:.84rem;
+
+}
+
+.hero-info{
+
+    gap:10px;
+
+}
+
+}
