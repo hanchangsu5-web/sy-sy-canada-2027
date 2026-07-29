@@ -412,3 +412,69 @@ html{
 }
 
 }
+
+/* =======================================================
+   TRAVEL MEMORY
+   ======================================================= */
+
+.travel-member{
+    margin-top:40px;
+    padding:30px;
+    background:#f8fbff;
+    border:2px solid #d9e9ff;
+    border-radius:22px;
+}
+
+.travel-member h3{
+    margin:0 0 18px;
+    color:#1f66c2;
+    font-size:28px;
+}
+
+.main-photo{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    border-radius:18px;
+    margin-bottom:18px;
+    box-shadow:0 8px 22px rgba(0,0,0,.12);
+}
+
+.sub-photo-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.sub-photo-grid img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:14px;
+}
+
+.travel-comment{
+    background:white;
+    border-left:5px solid #2563eb;
+    padding:18px;
+    border-radius:12px;
+    line-height:1.8;
+    font-size:18px;
+}
+
+@media(max-width:768px){
+
+.sub-photo-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.travel-member{
+    padding:22px;
+}
+
+.travel-comment{
+    font-size:17px;
+}
+
+}
