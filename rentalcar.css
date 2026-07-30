@@ -1,0 +1,1085 @@
+/* =========================================================
+   RENTALCAR.CSS
+   PART 1
+   Hero / Vehicle / Compare Table
+=========================================================*/
+
+/* 페이지 전용 */
+
+.rental-page{
+    background:#f8fafc;
+}
+
+/* =========================================================
+   HERO ICON
+=========================================================*/
+
+.rental-page .hero-icon{
+    font-size:4.5rem;
+    margin-bottom:18px;
+}
+
+.rental-page .hero p{
+    max-width:760px;
+    margin:0 auto;
+}
+
+/* =========================================================
+   SECTION TITLE
+=========================================================*/
+
+.section-title-icon{
+    font-size:1.8rem;
+    margin-right:8px;
+}
+
+/* =========================================================
+   RATING
+=========================================================*/
+
+.rating{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin:14px 0;
+    color:#f59e0b;
+    font-size:1rem;
+}
+
+.rating span:last-child{
+    color:#475569;
+    font-weight:600;
+}
+
+/* =========================================================
+   VEHICLE GRID
+=========================================================*/
+
+.vehicle-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:28px;
+    margin-top:32px;
+}
+
+/* =========================================================
+   VEHICLE CARD
+=========================================================*/
+
+.vehicle-card{
+
+    position:relative;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    overflow:hidden;
+
+    transition:all .25s ease;
+
+    border:1px solid #e2e8f0;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.08);
+
+}
+
+.vehicle-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(15,23,42,.12);
+
+}
+
+.vehicle-card h3{
+
+    margin:12px 0;
+
+    font-size:1.45rem;
+
+}
+
+.vehicle-card p{
+
+    color:#475569;
+
+    line-height:1.8;
+
+}
+
+.vehicle-card ul{
+
+    margin-top:18px;
+
+    padding-left:18px;
+
+    line-height:2;
+
+}
+
+.vehicle-card li{
+
+    color:#334155;
+
+}
+
+/* =========================================================
+   RANK BADGE
+=========================================================*/
+
+.rank-badge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:#0f766e;
+
+    color:#fff;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+/* =========================================================
+   RECOMMEND BADGE
+=========================================================*/
+
+.recommend{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    background:#dcfce7;
+
+    color:#166534;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+}
+
+/* =========================================================
+   VEHICLE INFO
+=========================================================*/
+
+.vehicle-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.vehicle-info div{
+
+    background:#f8fafc;
+
+    border-radius:12px;
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+.vehicle-info strong{
+
+    display:block;
+
+    color:#0f172a;
+
+    margin-bottom:6px;
+
+    font-size:.95rem;
+
+}
+
+.vehicle-info span{
+
+    color:#64748b;
+
+    font-size:.9rem;
+
+}
+
+/* =========================================================
+   COMPARE TABLE
+=========================================================*/
+
+.compare-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:30px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+}
+
+.compare-table thead{
+
+    background:#0f766e;
+
+    color:#fff;
+
+}
+
+.compare-table th{
+
+    padding:16px;
+
+    font-weight:700;
+
+}
+
+.compare-table td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.compare-table tbody tr:nth-child(even){
+
+    background:#f8fafc;
+
+}
+
+.compare-table tbody tr:hover{
+
+    background:#ecfeff;
+
+}
+
+/* =========================================================
+   SCORE COLOR
+=========================================================*/
+
+.score-good{
+
+    color:#16a34a;
+
+    font-weight:700;
+
+}
+
+.score-normal{
+
+    color:#d97706;
+
+    font-weight:700;
+
+}
+
+.score-bad{
+
+    color:#dc2626;
+
+    font-weight:700;
+
+}
+
+/* =========================================================
+   MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+    .vehicle-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .vehicle-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .compare-table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+}
+
+/* =========================================================
+   RENTALCAR.CSS
+   PART 2
+   Luggage / Driver / Timeline / Fuel Guide
+=========================================================*/
+
+
+/* =========================================================
+   LUGGAGE LAYOUT
+=========================================================*/
+
+.luggage-layout{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin:36px 0;
+
+}
+
+.luggage-box{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    font-weight:700;
+
+    font-size:.95rem;
+
+    background:#0f766e;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.12);
+
+}
+
+.luggage-box.medium{
+
+    background:#64748b;
+
+}
+
+.luggage-note{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    color:#475569;
+
+    line-height:1.8;
+
+}
+
+/* =========================================================
+   DRIVER GRID
+=========================================================*/
+
+.driver-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:28px;
+
+    margin-top:30px;
+
+}
+
+.driver-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    border-left:6px solid #0f766e;
+
+    box-shadow:0 10px 24px rgba(15,23,42,.08);
+
+}
+
+.driver-card h3{
+
+    margin-bottom:18px;
+
+}
+
+.driver-card ul{
+
+    padding-left:20px;
+
+    line-height:2;
+
+}
+
+.driver-card li{
+
+    color:#334155;
+
+}
+
+/* =========================================================
+   DOCUMENT BADGE
+=========================================================*/
+
+.doc-tag{
+
+    display:inline-block;
+
+    margin:5px 6px 5px 0;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    background:#ecfeff;
+
+    color:#0f766e;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+/* =========================================================
+   TIMELINE
+=========================================================*/
+
+.timeline{
+
+    position:relative;
+
+    margin:40px 0;
+
+    padding-left:30px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:8px;
+
+    top:0;
+
+    bottom:0;
+
+    width:4px;
+
+    background:#0f766e;
+
+    border-radius:20px;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:34px;
+
+    padding-left:24px;
+
+}
+
+.timeline-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-30px;
+
+    top:6px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#0f766e;
+
+    border:4px solid #fff;
+
+    box-shadow:0 0 0 3px #99f6e4;
+
+}
+
+.timeline-item h4{
+
+    margin-bottom:8px;
+
+    color:#0f172a;
+
+}
+
+.timeline-item p{
+
+    color:#475569;
+
+    line-height:1.8;
+
+}
+
+/* =========================================================
+   FUEL GUIDE
+=========================================================*/
+
+.fuel-step{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-bottom:24px;
+
+    padding:22px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.06);
+
+}
+
+.fuel-number{
+
+    flex-shrink:0;
+
+    width:54px;
+
+    height:54px;
+
+    border-radius:50%;
+
+    background:#0f766e;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+}
+
+.fuel-content h4{
+
+    margin-bottom:10px;
+
+}
+
+.fuel-content p{
+
+    color:#475569;
+
+    line-height:1.9;
+
+}
+
+/* =========================================================
+   GAS TYPE
+=========================================================*/
+
+.gas-tag{
+
+    display:inline-block;
+
+    margin:6px 8px 6px 0;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    font-size:.85rem;
+
+}
+
+.gas-regular{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+}
+
+.gas-mid{
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+}
+
+.gas-premium{
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+}
+
+.gas-diesel{
+
+    background:#e0f2fe;
+
+    color:#075985;
+
+}
+
+/* =========================================================
+   IMPORTANT MESSAGE
+=========================================================*/
+
+.important-box{
+
+    margin:30px 0;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:#fff7ed;
+
+    border-left:6px solid #ea580c;
+
+}
+
+.important-box h4{
+
+    margin-bottom:10px;
+
+    color:#9a3412;
+
+}
+
+.important-box p{
+
+    color:#7c2d12;
+
+    line-height:1.9;
+
+}
+
+/* =========================================================
+   MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+    .fuel-step{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .timeline{
+
+        padding-left:20px;
+
+    }
+
+    .timeline-item{
+
+        padding-left:18px;
+
+    }
+
+}
+
+/* =========================================================
+   RENTALCAR.CSS
+   PART 3
+   Scenario / Dialog / Checklist / Footer
+=========================================================*/
+
+
+/* =========================================================
+   SCENARIO CARD
+=========================================================*/
+
+.scenario-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:28px;
+
+    margin-top:30px;
+
+}
+
+.scenario-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    border-top:6px solid #0f766e;
+
+    box-shadow:0 10px 24px rgba(15,23,42,.08);
+
+    transition:.25s;
+
+}
+
+.scenario-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.scenario-card h3{
+
+    margin-bottom:14px;
+
+}
+
+.scenario-card p{
+
+    color:#475569;
+
+    line-height:1.9;
+
+}
+
+/* =========================================================
+   SCENARIO ICON
+=========================================================*/
+
+.scenario-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#ecfeff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1.8rem;
+
+    margin-bottom:18px;
+
+}
+
+/* =========================================================
+   DIALOG BOX
+=========================================================*/
+
+.dialog{
+
+    margin-top:20px;
+
+    background:#0f172a;
+
+    color:#ffffff;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    font-family:Consolas, monospace;
+
+    line-height:2;
+
+    overflow-x:auto;
+
+}
+
+.dialog strong{
+
+    color:#5eead4;
+
+}
+
+/* =========================================================
+   TRANSLATION
+=========================================================*/
+
+.translation{
+
+    margin-top:16px;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    background:#f8fafc;
+
+    border-left:5px solid #0f766e;
+
+    color:#334155;
+
+    line-height:1.8;
+
+}
+
+/* =========================================================
+   TIP BOX
+=========================================================*/
+
+.tip-box{
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-radius:16px;
+
+    background:#ecfeff;
+
+    border-left:6px solid #0891b2;
+
+}
+
+.tip-box h4{
+
+    margin-bottom:10px;
+
+    color:#155e75;
+
+}
+
+.tip-box p{
+
+    color:#164e63;
+
+}
+
+/* =========================================================
+   WARNING
+=========================================================*/
+
+.warning-box{
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-radius:16px;
+
+    background:#fff7ed;
+
+    border-left:6px solid #ea580c;
+
+}
+
+.warning-box h4{
+
+    margin-bottom:10px;
+
+    color:#9a3412;
+
+}
+
+.warning-box p{
+
+    color:#7c2d12;
+
+}
+
+/* =========================================================
+   CHECK GRID
+=========================================================*/
+
+.check-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:22px;
+
+    margin-top:34px;
+
+}
+
+.check-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:0 8px 22px rgba(15,23,42,.08);
+
+}
+
+.check-card h4{
+
+    margin-bottom:14px;
+
+}
+
+.check-card ul{
+
+    padding-left:18px;
+
+    line-height:2;
+
+}
+
+.check-card li{
+
+    color:#334155;
+
+}
+
+/* =========================================================
+   FINAL MESSAGE
+=========================================================*/
+
+.final-message{
+
+    margin-top:60px;
+
+    padding:34px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:linear-gradient(135deg,#0f766e,#155e75);
+
+    color:#ffffff;
+
+}
+
+.final-message h2{
+
+    color:#ffffff;
+
+    margin-bottom:14px;
+
+}
+
+.final-message p{
+
+    color:#e2e8f0;
+
+    line-height:1.9;
+
+}
+
+/* =========================================================
+   HOME BUTTON
+=========================================================*/
+
+.home-area{
+
+    margin-top:50px;
+
+    text-align:center;
+
+}
+
+/* =========================================================
+   MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+    .scenario-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .scenario-card{
+
+        padding:22px;
+
+    }
+
+    .dialog{
+
+        font-size:.9rem;
+
+    }
+
+    .check-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .final-message{
+
+        padding:26px;
+
+    }
+
+}
