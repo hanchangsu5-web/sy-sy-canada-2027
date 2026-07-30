@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Rules | SY & SY Canada 2027</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        :root{
+
+            --primary:#0A6FB7;
+            --primary-dark:#084E82;
+
+            --bg:#F5F7FA;
+
+            --card:#FFFFFF;
+
+            --text:#222;
+
+            --sub:#666;
+
+            --border:#E3E6EA;
+
+            --radius:18px;
+
+            --shadow:0 10px 25px rgba(0,0,0,.08);
+
+            --max-width:1200px;
+
+        }
+
+        body{
+
+            font-family:'Pretendard',sans-serif;
+
+            background:var(--bg);
+
+            color:var(--text);
+
+            line-height:1.8;
+
+        }
+
+        a{
+
+            text-decoration:none;
+
+            color:inherit;
+
+        }
+
+        img{
+
+            display:block;
+
+            max-width:100%;
+
+        }
+
+        header{
+
+            background:white;
+
+            border-bottom:1px solid var(--border);
+
+            position:sticky;
+
+            top:0;
+
+            z-index:100;
+
+        }
+
+        .header-inner{
+
+            max-width:var(--max-width);
+
+            margin:auto;
+
+            padding:18px 25px;
+
+            display:flex;
+
+            justify-content:space-between;
+
+            align-items:center;
+
+        }
+
+        .logo{
+
+            font-size:24px;
+
+            font-weight:700;
+
+            color:var(--primary);
+
+        }
+
+        nav{
+
+            display:flex;
+
+            gap:25px;
+
+            font-size:15px;
+
+            font-weight:500;
+
+        }
+
+        nav a:hover{
+
+            color:var(--primary);
+
+        }
+
+        main{
+
+            max-width:var(--max-width);
+
+            margin:auto;
+
+            padding:40px 20px 80px;
+
+        }
+
+        .hero{
+
+            background:linear-gradient(135deg,#0A6FB7,#4DA7E8);
+
+            color:white;
+
+            padding:70px 50px;
+
+            border-radius:25px;
+
+            box-shadow:var(--shadow);
+
+            margin-bottom:35px;
+
+        }
+
+        .hero h1{
+
+            font-size:42px;
+
+            margin-bottom:15px;
+
+        }
+
+        .hero p{
+
+            font-size:18px;
+
+            opacity:.95;
+
+        }
+
+        .version{
+
+            margin-top:30px;
+
+            display:inline-block;
+
+            background:rgba(255,255,255,.18);
+
+            padding:10px 18px;
+
+            border-radius:50px;
+
+            font-size:14px;
+
+        }
+
+        .toc{
+
+            background:var(--card);
+
+            border-radius:20px;
+
+            padding:35px;
+
+            box-shadow:var(--shadow);
+
+            margin-bottom:35px;
+
+        }
+
+        .toc h2{
+
+            margin-bottom:25px;
+
+            color:var(--primary);
+
+        }
+
+        .toc-grid{
+
+            display:grid;
+
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+            gap:15px;
+
+        }
+
+        .toc a{
+
+            padding:14px 18px;
+
+            border:1px solid var(--border);
+
+            border-radius:12px;
+
+            transition:.25s;
+
+            background:white;
+
+            font-weight:500;
+
+        }
+
+        .toc a:hover{
+
+            background:var(--primary);
+
+            color:white;
+
+            transform:translateY(-3px);
+
+        }
+
+        section{
+
+            background:white;
+
+            border-radius:20px;
+
+            padding:40px;
+
+            box-shadow:var(--shadow);
+
+            margin-bottom:30px;
+
+        }
+
+        section h2{
+
+            color:var(--primary);
+
+            margin-bottom:20px;
+
+            font-size:30px;
+
+        }
+
+        section h3{
+
+            margin-top:25px;
+
+            margin-bottom:12px;
+
+            color:#333;
+
+        }
+
+        .lead{
+
+            font-size:18px;
+
+            color:#444;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-inner">
+
+        <div class="logo">
+            🇨🇦 SY & SY Canada 2027
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="#purpose">Project</a>
+
+            <a href="#philosophy">Development</a>
+
+            <a href="#goal">Goal</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+    <div class="hero">
+
+        <h1>Project Charter</h1>
+
+        <p>
+            Official development principles and design standards for
+            <strong>SY & SY Canada 2027</strong>.
+        </p>
+
+        <div class="version">
+
+            Version 1.0<br>
+
+            Last Updated : July 2026
+
+        </div>
+
+    </div>
+
+    <div class="toc">
+
+        <h2>📚 Contents</h2>
+
+        <div class="toc-grid">
+
+            <a href="#purpose">① 프로젝트 소개</a>
+
+            <a href="#goal">② 프로젝트 목표</a>
+
+            <a href="#philosophy">③ 개발 철학</a>
+
+            <a href="#design">④ UI / 디자인 원칙</a>
+
+            <a href="#map">⑤ 여행지도 원칙</a>
+
+            <a href="#expense">⑥ 가계부 원칙</a>
+
+            <a href="#photo">⑦ 사진 관리 원칙</a>
+
+            <a href="#chatgpt">⑧ ChatGPT 작업 원칙</a>
+
+            <a href="#git">⑨ Git 관리 원칙</a>
+
+            <a href="#forbidden">⑩ 하지 않는 것</a>
+
+            <a href="#history">⑪ Version History</a>
+
+            <a href="#future">⑫ 최종 목표</a>
+
+        </div>
+
+    </div>
+
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Rules | SY & SY Canada 2027</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        :root{
+
+            --primary:#0A6FB7;
+            --primary-dark:#084E82;
+
+            --bg:#F5F7FA;
+
+            --card:#FFFFFF;
+
+            --text:#222;
+
+            --sub:#666;
+
+            --border:#E3E6EA;
+
+            --radius:18px;
+
+            --shadow:0 10px 25px rgba(0,0,0,.08);
+
+            --max-width:1200px;
+
+        }
+
+        body{
+
+            font-family:'Pretendard',sans-serif;
+
+            background:var(--bg);
+
+            color:var(--text);
+
+            line-height:1.8;
+
+        }
+
+        a{
+
+            text-decoration:none;
+
+            color:inherit;
+
+        }
+
+        img{
+
+            display:block;
+
+            max-width:100%;
+
+        }
+
+        header{
+
+            background:white;
+
+            border-bottom:1px solid var(--border);
+
+            position:sticky;
+
+            top:0;
+
+            z-index:100;
+
+        }
+
+        .header-inner{
+
+            max-width:var(--max-width);
+
+            margin:auto;
+
+            padding:18px 25px;
+
+            display:flex;
+
+            justify-content:space-between;
+
+            align-items:center;
+
+        }
+
+        .logo{
+
+            font-size:24px;
+
+            font-weight:700;
+
+            color:var(--primary);
+
+        }
+
+        nav{
+
+            display:flex;
+
+            gap:25px;
+
+            font-size:15px;
+
+            font-weight:500;
+
+        }
+
+        nav a:hover{
+
+            color:var(--primary);
+
+        }
+
+        main{
+
+            max-width:var(--max-width);
+
+            margin:auto;
+
+            padding:40px 20px 80px;
+
+        }
+
+        .hero{
+
+            background:linear-gradient(135deg,#0A6FB7,#4DA7E8);
+
+            color:white;
+
+            padding:70px 50px;
+
+            border-radius:25px;
+
+            box-shadow:var(--shadow);
+
+            margin-bottom:35px;
+
+        }
+
+        .hero h1{
+
+            font-size:42px;
+
+            margin-bottom:15px;
+
+        }
+
+        .hero p{
+
+            font-size:18px;
+
+            opacity:.95;
+
+        }
+
+        .version{
+
+            margin-top:30px;
+
+            display:inline-block;
+
+            background:rgba(255,255,255,.18);
+
+            padding:10px 18px;
+
+            border-radius:50px;
+
+            font-size:14px;
+
+        }
+
+        .toc{
+
+            background:var(--card);
+
+            border-radius:20px;
+
+            padding:35px;
+
+            box-shadow:var(--shadow);
+
+            margin-bottom:35px;
+
+        }
+
+        .toc h2{
+
+            margin-bottom:25px;
+
+            color:var(--primary);
+
+        }
+
+        .toc-grid{
+
+            display:grid;
+
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+            gap:15px;
+
+        }
+
+        .toc a{
+
+            padding:14px 18px;
+
+            border:1px solid var(--border);
+
+            border-radius:12px;
+
+            transition:.25s;
+
+            background:white;
+
+            font-weight:500;
+
+        }
+
+        .toc a:hover{
+
+            background:var(--primary);
+
+            color:white;
+
+            transform:translateY(-3px);
+
+        }
+
+        section{
+
+            background:white;
+
+            border-radius:20px;
+
+            padding:40px;
+
+            box-shadow:var(--shadow);
+
+            margin-bottom:30px;
+
+        }
+
+        section h2{
+
+            color:var(--primary);
+
+            margin-bottom:20px;
+
+            font-size:30px;
+
+        }
+
+        section h3{
+
+            margin-top:25px;
+
+            margin-bottom:12px;
+
+            color:#333;
+
+        }
+
+        .lead{
+
+            font-size:18px;
+
+            color:#444;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-inner">
+
+        <div class="logo">
+            🇨🇦 SY & SY Canada 2027
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="#purpose">Project</a>
+
+            <a href="#philosophy">Development</a>
+
+            <a href="#goal">Goal</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+    <div class="hero">
+
+        <h1>Project Charter</h1>
+
+        <p>
+            Official development principles and design standards for
+            <strong>SY & SY Canada 2027</strong>.
+        </p>
+
+        <div class="version">
+
+            Version 1.0<br>
+
+            Last Updated : July 2026
+
+        </div>
+
+    </div>
+
+    <div class="toc">
+
+        <h2>📚 Contents</h2>
+
+        <div class="toc-grid">
+
+            <a href="#purpose">① 프로젝트 소개</a>
+
+            <a href="#goal">② 프로젝트 목표</a>
+
+            <a href="#philosophy">③ 개발 철학</a>
+
+            <a href="#design">④ UI / 디자인 원칙</a>
+
+            <a href="#map">⑤ 여행지도 원칙</a>
+
+            <a href="#expense">⑥ 가계부 원칙</a>
+
+            <a href="#photo">⑦ 사진 관리 원칙</a>
+
+            <a href="#chatgpt">⑧ ChatGPT 작업 원칙</a>
+
+            <a href="#git">⑨ Git 관리 원칙</a>
+
+            <a href="#forbidden">⑩ 하지 않는 것</a>
+
+            <a href="#history">⑪ Version History</a>
+
+            <a href="#future">⑫ 최종 목표</a>
+
+        </div>
+
+    </div>
+
+        <section id="design">
+
+        <h2>🎨 UI / 디자인 원칙</h2>
+
+        <p class="lead">
+            모든 페이지는 하나의 통일된 디자인 시스템(Design System)을 따른다.
+        </p>
+
+        <h3>공통 디자인 요소</h3>
+
+        <ul>
+
+            <li>✔ 동일한 Header와 Footer 사용</li>
+
+            <li>✔ 공통 색상(Color Palette) 유지</li>
+
+            <li>✔ 동일한 카드(Card) 디자인 사용</li>
+
+            <li>✔ 공통 버튼(Button) 스타일 사용</li>
+
+            <li>✔ 동일한 폰트 및 글꼴 크기 체계 유지</li>
+
+            <li>✔ 일관된 아이콘 스타일 사용</li>
+
+            <li>✔ 페이지 간 동일한 여백과 정렬 유지</li>
+
+        </ul>
+
+        <h3>디자인 목표</h3>
+
+        <p>
+
+            사용자가 새로운 페이지를 열더라도
+            하나의 서비스 안에 있다는 느낌을 받을 수 있도록
+            전체 사이트의 디자인을 통일한다.
+
+        </p>
+
+    </section>
+
+
+    <section id="responsive">
+
+        <h2>📱 반응형 원칙</h2>
+
+        <p class="lead">
+
+            모든 페이지는 다양한 화면 크기에서 동일한 사용 경험을 제공해야 한다.
+
+        </p>
+
+        <ul>
+
+            <li>✔ Desktop</li>
+
+            <li>✔ Laptop</li>
+
+            <li>✔ Tablet</li>
+
+            <li>✔ Mobile</li>
+
+        </ul>
+
+        <p>
+
+            새로운 기능을 추가할 때는
+            PC 화면뿐 아니라 모바일 화면에서도
+            자연스럽게 동작하는지 반드시 확인한다.
+
+        </p>
+
+    </section>
+
+
+    <section id="map">
+
+        <h2>🗺 여행지도 원칙</h2>
+
+        <p class="lead">
+
+            여행지도는 본 프로젝트의 핵심 기능(Core Feature)이다.
+
+        </p>
+
+        <h3>필수 기능</h3>
+
+        <ul>
+
+            <li>✔ Day별 일정 보기</li>
+
+            <li>✔ 이동 경로(Route)</li>
+
+            <li>✔ 장소 핀(Pin)</li>
+
+            <li>✔ 장소 대표 사진</li>
+
+            <li>✔ 장소 설명</li>
+
+            <li>✔ 추천 체류 시간</li>
+
+            <li>✔ 주차 정보</li>
+
+            <li>✔ 화장실 정보</li>
+
+            <li>✔ 방문 순서</li>
+
+            <li>✔ Google Maps 길찾기 연결</li>
+
+            <li>✔ 일정 페이지와 연동</li>
+
+        </ul>
+
+        <h3>향후 확장 기능</h3>
+
+        <ul>
+
+            <li>□ GPS 현재 위치</li>
+
+            <li>□ 방문 완료 체크</li>
+
+            <li>□ 여행 후 사진 연결</li>
+
+            <li>□ 여행 통계</li>
+
+            <li>□ 즐겨찾기</li>
+
+            <li>□ 오프라인 지도 지원</li>
+
+        </ul>
+
+    </section>
+
+
+    <section id="expense">
+
+        <h2>💰 가계부 원칙</h2>
+
+        <p class="lead">
+
+            가계부는 단순한 계산기가 아니라
+            여행 예산을 종합적으로 관리하는 기능이다.
+
+        </p>
+
+        <h3>관리 항목</h3>
+
+        <ul>
+
+            <li>✔ 총 예산</li>
+
+            <li>✔ 카테고리별 지출</li>
+
+            <li>✔ 카드 결제</li>
+
+            <li>✔ 현금 사용</li>
+
+            <li>✔ 환율 적용</li>
+
+            <li>✔ CAD / KRW 동시 표시</li>
+
+            <li>✔ 일자별 지출</li>
+
+            <li>✔ 가족별 사용 금액</li>
+
+            <li>✔ 통계 및 그래프</li>
+
+        </ul>
+
+        <p>
+
+            모든 금액은 정확성을 우선으로 하며,
+            입력과 확인이 쉽도록 설계한다.
+
+        </p>
+
+    </section>
+
+
+    <section id="photo">
+
+        <h2>📸 사진 관리 원칙</h2>
+
+        <p class="lead">
+
+            사진은 여행의 기록이며,
+            여행 전부터 여행 후까지 하나의 흐름으로 관리한다.
+
+        </p>
+
+        <h3>관리 방향</h3>
+
+        <ul>
+
+            <li>✔ 장소별 사진 관리</li>
+
+            <li>✔ Day별 사진 정리</li>
+
+            <li>✔ 여행지도와 연동</li>
+
+            <li>✔ 일정과 연동</li>
+
+            <li>✔ 대표 사진 지정</li>
+
+            <li>✔ 여행 후 앨범 기능 확장</li>
+
+        </ul>
+
+    </section>
+
+        <section id="chatgpt">
+
+        <h2>🤖 ChatGPT 작업 원칙</h2>
+
+        <p class="lead">
+
+            ChatGPT는 단순히 코드를 생성하는 도구가 아니라,
+            프로젝트의 설계와 품질을 함께 관리하는 개발 파트너의 역할을 수행한다.
+
+        </p>
+
+        <h3>기본 원칙</h3>
+
+        <ul>
+
+            <li>✔ 기능 구현 전에 프로젝트 구조를 먼저 검토한다.</li>
+
+            <li>✔ 기존 코드와의 호환성을 항상 고려한다.</li>
+
+            <li>✔ 프로젝트 전체의 디자인 일관성을 유지한다.</li>
+
+            <li>✔ 유지보수가 쉬운 구조를 우선한다.</li>
+
+            <li>✔ 사용자가 쉽게 이해하고 적용할 수 있는 코드를 제공한다.</li>
+
+            <li>✔ 코드에는 필요한 설명과 적용 위치를 함께 제공한다.</li>
+
+        </ul>
+
+        <h3>개발 원칙</h3>
+
+        <ul>
+
+            <li>✔ 임시 구현을 제안하지 않는다.</li>
+
+            <li>✔ 이미 완성된 구조를 불필요하게 다시 작성하지 않는다.</li>
+
+            <li>✔ 새로운 기능은 기존 구조를 해치지 않는 방식으로 추가한다.</li>
+
+            <li>✔ 장기적인 확장성을 고려하여 설계한다.</li>
+
+            <li>✔ 기능보다 안정성과 일관성을 우선한다.</li>
+
+        </ul>
+
+    </section>
+
+
+    <section id="git">
+
+        <h2>🌿 Git 관리 원칙</h2>
+
+        <p class="lead">
+
+            모든 개발 내용은 Git을 통해 관리하며,
+            의미 있는 변경 단위로 Commit을 작성한다.
+
+        </p>
+
+        <h3>개발 순서</h3>
+
+        <ol>
+
+            <li>설계</li>
+
+            <li>HTML 작성</li>
+
+            <li>CSS 작성</li>
+
+            <li>JavaScript 작성</li>
+
+            <li>브라우저 테스트</li>
+
+            <li>모바일 확인</li>
+
+            <li>Git Commit</li>
+
+            <li>Git Push</li>
+
+        </ol>
+
+        <h3>Commit 원칙</h3>
+
+        <ul>
+
+            <li>✔ 하나의 기능 단위로 Commit 한다.</li>
+
+            <li>✔ Commit 메시지는 변경 내용을 명확하게 작성한다.</li>
+
+            <li>✔ 테스트 완료 후 Push 한다.</li>
+
+        </ul>
+
+    </section>
+
+
+    <section id="forbidden">
+
+        <h2>🚫 하지 않는 것</h2>
+
+        <p class="lead">
+
+            프로젝트의 품질을 유지하기 위해 다음 사항은 지양한다.
+
+        </p>
+
+        <ul>
+
+            <li>❌ 임시 구현 후 나중에 다시 만드는 개발</li>
+
+            <li>❌ 중복 코드 작성</li>
+
+            <li>❌ 페이지마다 다른 디자인 적용</li>
+
+            <li>❌ 사용하지 않는 코드 방치</li>
+
+            <li>❌ 의미 없는 변수명 및 함수명 사용</li>
+
+            <li>❌ 기능별 파일 구분 없이 작성</li>
+
+            <li>❌ 테스트하지 않은 상태로 Git Push</li>
+
+            <li>❌ 프로젝트 구조를 고려하지 않은 기능 추가</li>
+
+        </ul>
+
+    </section>
+
+
+    <section id="history">
+
+        <h2>📖 Version History</h2>
+
+        <table class="history-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Version</th>
+
+                    <th>Date</th>
+
+                    <th>Description</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>v1.0</td>
+
+                    <td>2026-07</td>
+
+                    <td>PROJECT_RULES.html 최초 작성</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>v1.1</td>
+
+                    <td>-</td>
+
+                    <td>향후 변경 사항 기록</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>v1.2</td>
+
+                    <td>-</td>
+
+                    <td>향후 변경 사항 기록</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <section id="future">
+
+        <h2>🚀 최종 목표</h2>
+
+        <p class="lead">
+
+            SY & SY Canada 2027은 단순한 여행 홈페이지가 아니다.
+
+        </p>
+
+        <p>
+
+            여행을 준비하고,
+
+            여행 중 활용하며,
+
+            여행이 끝난 후에도 오랫동안 추억을 보관할 수 있는
+
+            우리 가족만의 디지털 여행 플랫폼을 만드는 것이 이 프로젝트의 궁극적인 목표이다.
+
+        </p>
+
+        <br>
+
+        <h3>Project Motto</h3>
+
+        <blockquote>
+
+            <strong>
+
+                "Plan Together. Travel Together. Remember Forever."
+
+            </strong>
+
+        </blockquote>
+
+    </section>
+
+            .history-table{
+
+            width:100%;
+
+            border-collapse:collapse;
+
+            margin-top:20px;
+
+        }
+
+        .history-table th{
+
+            background:var(--primary);
+
+            color:white;
+
+            padding:15px;
+
+            text-align:left;
+
+        }
+
+        .history-table td{
+
+            padding:15px;
+
+            border-bottom:1px solid var(--border);
+
+        }
+
+        .history-table tr:hover{
+
+            background:#f8fbff;
+
+        }
+
+        ul,
+        ol{
+
+            margin:15px 0 15px 25px;
+
+        }
+
+        li{
+
+            margin-bottom:10px;
+
+        }
+
+        blockquote{
+
+            margin-top:20px;
+
+            padding:25px;
+
+            border-left:6px solid var(--primary);
+
+            background:#eef7ff;
+
+            border-radius:12px;
+
+            font-size:20px;
+
+            font-style:italic;
+
+        }
+
+        footer{
+
+            margin-top:50px;
+
+            padding:40px 20px;
+
+            text-align:center;
+
+            color:#777;
+
+            border-top:1px solid var(--border);
+
+        }
+
+        footer h3{
+
+            color:var(--primary);
+
+            margin-bottom:10px;
+
+        }
+
+        @media(max-width:900px){
+
+            .hero{
+
+                padding:45px 30px;
+
+            }
+
+            .hero h1{
+
+                font-size:32px;
+
+            }
+
+            section{
+
+                padding:28px;
+
+            }
+
+            .toc-grid{
+
+                grid-template-columns:1fr;
+
+            }
+
+            nav{
+
+                display:none;
+
+            }
+
+        }
+
+        @media(max-width:600px){
+
+            .hero{
+
+                padding:35px 22px;
+
+            }
+
+            .hero h1{
+
+                font-size:26px;
+
+            }
+
+            section h2{
+
+                font-size:24px;
+
+            }
+
+            .lead{
+
+                font-size:16px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- 기존 내용 -->
+
+    <footer>
+
+        <h3>SY & SY Canada 2027</h3>
+
+        <p>
+
+            Project Charter & Development Rules
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Plan Together. Travel Together. Remember Forever.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            © 2026 SY & SY Canada 2027 Project
+
+        </p>
+
+    </footer>
+
+</main>
+
+</body>
+
+</html>
