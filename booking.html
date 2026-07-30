@@ -40,10 +40,9 @@
 
         <p>
 
-            이번 여행에서 미리 예약해야 하는 항목을
-            한곳에서 확인할 수 있는 페이지입니다.
-            예약 시기와 추천 시간, 공식 예약 사이트까지
-            한 번에 정리했습니다.
+            이번 여행에서 미리 예약해야 하는 항목과
+            예약 순서, 공식 예약 사이트를 한곳에 정리했습니다.
+            출발 전 이 페이지 하나만 확인하면 예약 준비를 모두 마칠 수 있습니다.
 
         </p>
 
@@ -67,9 +66,11 @@
 
             <a href="#timeline">예약 일정</a>
 
-            <a href="#links">공식 사이트</a>
+            <a href="#official-links">공식 예약</a>
 
-            <a href="#checklist">체크리스트</a>
+            <a href="#screens">예약 화면</a>
+
+            <a href="#faq">FAQ</a>
 
         </div>
 
@@ -89,18 +90,21 @@
 
         <p class="section-desc">
 
-            이번 여행에서 예약이 필요한 항목은 총 4개입니다.
-            필수 예약과 선택 예약을 구분하여 준비하면 됩니다.
+            이번 일정에서 사전에 예약하는 항목은 총 3가지입니다.
+            특히 모레인 레이크 셔틀은 성수기 예약 경쟁이 치열하므로
+            가장 먼저 예약하는 것을 추천합니다.
 
         </p>
 
         <div class="booking-summary">
 
+            <!-- Moraine -->
+
             <div class="summary-card">
 
                 <div class="summary-icon">🚍</div>
 
-                <h3>모레인 셔틀</h3>
+                <h3>모레인 레이크 셔틀</h3>
 
                 <p>
 
@@ -112,6 +116,8 @@
 
             </div>
 
+            <!-- Gondola -->
+
             <div class="summary-card">
 
                 <div class="summary-icon">🚡</div>
@@ -122,27 +128,13 @@
 
                     <span class="badge required">필수</span><br>
 
-                    원하는 시간대 선점 추천
+                    원하는 시간대를 미리 확보
 
                 </p>
 
             </div>
 
-            <div class="summary-card">
-
-                <div class="summary-icon">🚠</div>
-
-                <h3>레이크 루이스 곤돌라</h3>
-
-                <p>
-
-                    <span class="badge optional">선택</span><br>
-
-                    일정 변경 시 이용 가능한 플랜 B
-
-                </p>
-
-            </div>
+            <!-- Cruise -->
 
             <div class="summary-card">
 
@@ -154,7 +146,7 @@
 
                     <span class="badge recommended">추천</span><br>
 
-                    추천 예약 시간 : 오전 10:00
+                    오전 10:00 탑승 추천
 
                 </p>
 
@@ -168,12 +160,18 @@
 
             <p>
 
-                <strong>① 모레인 레이크 셔틀 → ② 밴프 곤돌라 → ③ 미네완카 크루즈 → ④ 레이크 루이스 곤돌라</strong>
+                <strong>
+                ① 모레인 레이크 셔틀 →
+                ② 밴프 곤돌라 →
+                ③ 미네완카 크루즈
+                </strong>
 
                 <br><br>
 
-                특히 모레인 레이크 셔틀은 성수기에는 빠르게 예약이 마감될 수 있으므로
-                가장 먼저 예약하는 것을 추천합니다.
+                모레인 레이크 셔틀은 가장 먼저 예약하고,
+                밴프 곤돌라와 미네완카 크루즈는
+                <strong>Banff Jasper Collection</strong> 공식 홈페이지에서
+                함께 예약하면 편리합니다.
 
             </p>
 
@@ -187,258 +185,79 @@
 <!-- PART 2 : 예약 항목 -->
 <!-- ===================================================== -->
 
-<section class="booking-section" id="booking-items">
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>예약 가이드 | SY-SY CANADA 2027</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+
+</head>
+
+<body>
+
+<header>
 
     <div class="container">
 
-        <h2>🎟️ 예약해야 하는 항목</h2>
+        <h1>🇨🇦 SY-SY CANADA 2027</h1>
 
-        <p class="section-desc">
+    </div>
 
-            필수 예약부터 선택 예약까지 한눈에 확인할 수 있습니다.
-            예약이 필요한 순서대로 진행하는 것을 추천합니다.
+</header>
+
+<main>
+
+<!-- ===================================================== -->
+<!-- HERO -->
+<!-- ===================================================== -->
+
+<section class="booking-hero">
+
+    <div class="container">
+
+        <h1>📅 예약 가이드</h1>
+
+        <p>
+
+            이번 여행에서 미리 예약해야 하는 항목과
+            예약 순서, 공식 예약 사이트를 한곳에 정리했습니다.
+            출발 전 이 페이지 하나만 확인하면 예약 준비를 모두 마칠 수 있습니다.
 
         </p>
 
-        <div class="booking-grid">
+    </div>
 
-            <!-- Moraine Shuttle -->
-            <article class="booking-card shuttle-card">
+</section>
 
-                <div class="booking-card-header">
+<!-- ===================================================== -->
+<!-- QUICK MENU -->
+<!-- ===================================================== -->
 
-                    <div class="booking-icon">🚍</div>
+<section class="section">
 
-                    <h3>모레인 레이크 셔틀</h3>
+    <div class="container">
 
-                </div>
+        <div class="quick-links">
 
-                <div class="booking-card-body">
+            <a href="#summary">예약 요약</a>
 
-                    <span class="badge required">필수 예약</span>
+            <a href="#booking-items">예약 항목</a>
 
-                    <p>
+            <a href="#timeline">예약 일정</a>
 
-                        성수기에는 가장 빨리 마감되는 예약입니다.
-                        여행 일정이 확정되면 가장 먼저 예약하세요.
+            <a href="#official-links">공식 예약</a>
 
-                    </p>
+            <a href="#screens">예약 화면</a>
 
-                    <ul class="booking-info">
-
-                        <li><strong>우선순위</strong><span>★★★★★</span></li>
-
-                        <li><strong>추천 시간</strong><span>아침 첫 셔틀</span></li>
-
-                        <li><strong>도착</strong><span>출발 30분 전</span></li>
-
-                        <li><strong>소요시간</strong><span>왕복 셔틀</span></li>
-
-                    </ul>
-
-                    <div class="booking-status">
-
-                        <div class="status-dot status-soon"></div>
-
-                        예약 예정
-
-                    </div>
-
-                    <div class="booking-action">
-
-                        <a href="#" class="booking-btn">
-
-                            예약 사이트
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-            <!-- Banff Gondola -->
-            <article class="booking-card gondola-card">
-
-                <div class="booking-card-header">
-
-                    <div class="booking-icon">🚡</div>
-
-                    <h3>밴프 곤돌라</h3>
-
-                </div>
-
-                <div class="booking-card-body">
-
-                    <span class="badge required">필수 예약</span>
-
-                    <p>
-
-                        원하는 시간대는 빠르게 마감될 수 있습니다.
-                        여행 일정에 맞는 시간을 미리 확보하세요.
-
-                    </p>
-
-                    <ul class="booking-info">
-
-                        <li><strong>우선순위</strong><span>★★★★☆</span></li>
-
-                        <li><strong>추천 시간</strong><span>오후 이용</span></li>
-
-                        <li><strong>예약 방식</strong><span>시간 지정</span></li>
-
-                        <li><strong>도착</strong><span>20분 전</span></li>
-
-                    </ul>
-
-                    <div class="booking-status">
-
-                        <div class="status-dot status-soon"></div>
-
-                        예약 예정
-
-                    </div>
-
-                    <div class="booking-action">
-
-                        <a href="#" class="booking-btn">
-
-                            예약 사이트
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-            <!-- Lake Louise Gondola -->
-            <article class="booking-card louise-card">
-
-                <div class="booking-card-header">
-
-                    <div class="booking-icon">🚠</div>
-
-                    <h3>레이크 루이스 곤돌라</h3>
-
-                </div>
-
-                <div class="booking-card-body">
-
-                    <span class="badge optional">선택</span>
-
-                    <p>
-
-                        일정 변경 시 이용하기 좋은 플랜 B입니다.
-                        야생동물 관찰로도 유명합니다.
-
-                    </p>
-
-                    <ul class="booking-info">
-
-                        <li><strong>우선순위</strong><span>★★★☆☆</span></li>
-
-                        <li><strong>추천 시간</strong><span>오전</span></li>
-
-                        <li><strong>예약</strong><span>권장</span></li>
-
-                        <li><strong>플랜</strong><span>선택 일정</span></li>
-
-                    </ul>
-
-                    <div class="booking-status">
-
-                        <div class="status-dot status-soon"></div>
-
-                        예약 예정
-
-                    </div>
-
-                    <div class="booking-action">
-
-                        <a href="#" class="booking-btn">
-
-                            예약 사이트
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-            <!-- Minnewanka Cruise -->
-            <article class="booking-card cruise-card">
-
-                <div class="booking-card-header">
-
-                    <div class="booking-icon">🚢</div>
-
-                    <h3>미네완카 크루즈</h3>
-
-                </div>
-
-                <div class="booking-card-body">
-
-                    <span class="badge recommended">추천</span>
-
-                    <p>
-
-                        로키의 아름다운 호수를 가장 편안하게 즐길 수 있는
-                        인기 액티비티입니다.
-
-                    </p>
-
-                    <ul class="booking-info">
-
-                        <li><strong>추천 시간</strong><span><strong>10:00</strong></span></li>
-
-                        <li><strong>체크인</strong><span>09:30</span></li>
-
-                        <li><strong>운항시간</strong><span>약 1시간</span></li>
-
-                        <li><strong>사진 촬영</strong><span>★★★★★</span></li>
-
-                    </ul>
-
-                    <div class="recommend-box">
-
-                        <h4>🌄 추천 시간</h4>
-
-                        <p>
-
-                            오전 10시는 햇빛이 충분히 비치고
-                            물빛이 아름다워 사진 촬영과 풍경 감상에
-                            가장 균형이 좋은 시간대입니다.
-
-                        </p>
-
-                    </div>
-
-                    <div class="booking-status">
-
-                        <div class="status-dot status-soon"></div>
-
-                        예약 예정
-
-                    </div>
-
-                    <div class="booking-action">
-
-                        <a href="#" class="booking-btn">
-
-                            예약 사이트
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
+            <a href="#faq">FAQ</a>
 
         </div>
 
@@ -447,7 +266,114 @@
 </section>
 
 <!-- ===================================================== -->
-<!-- PART 3 : 예약 오픈 일정 -->
+<!-- SUMMARY -->
+<!-- ===================================================== -->
+
+<section class="booking-section" id="summary">
+
+    <div class="container">
+
+        <h2>📌 예약 요약</h2>
+
+        <p class="section-desc">
+
+            이번 일정에서 사전에 예약하는 항목은 총 3가지입니다.
+            특히 모레인 레이크 셔틀은 성수기 예약 경쟁이 치열하므로
+            가장 먼저 예약하는 것을 추천합니다.
+
+        </p>
+
+        <div class="booking-summary">
+
+            <!-- Moraine -->
+
+            <div class="summary-card">
+
+                <div class="summary-icon">🚍</div>
+
+                <h3>모레인 레이크 셔틀</h3>
+
+                <p>
+
+                    <span class="badge required">필수</span><br>
+
+                    가장 먼저 예약해야 하는 항목
+
+                </p>
+
+            </div>
+
+            <!-- Gondola -->
+
+            <div class="summary-card">
+
+                <div class="summary-icon">🚡</div>
+
+                <h3>밴프 곤돌라</h3>
+
+                <p>
+
+                    <span class="badge required">필수</span><br>
+
+                    원하는 시간대를 미리 확보
+
+                </p>
+
+            </div>
+
+            <!-- Cruise -->
+
+            <div class="summary-card">
+
+                <div class="summary-icon">🚢</div>
+
+                <h3>미네완카 크루즈</h3>
+
+                <p>
+
+                    <span class="badge recommended">추천</span><br>
+
+                    오전 10:00 탑승 추천
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="info-box">
+
+            <h4>💡 예약 우선순위</h4>
+
+            <p>
+
+                <strong>
+                ① 모레인 레이크 셔틀 →
+                ② 밴프 곤돌라 →
+                ③ 미네완카 크루즈
+                </strong>
+
+                <br><br>
+
+                모레인 레이크 셔틀은 가장 먼저 예약하고,
+                밴프 곤돌라와 미네완카 크루즈는
+                <strong>Banff Jasper Collection</strong> 공식 홈페이지에서
+                함께 예약하면 편리합니다.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- PART 2 : 예약 항목 -->
+<!-- ===================================================== -->
+
+<!-- ===================================================== -->
+<!-- PART 3 : 예약 일정 및 예약 팁 -->
 <!-- ===================================================== -->
 
 <section class="booking-section" id="timeline">
@@ -458,8 +384,8 @@
 
         <p class="section-desc">
 
-            예약은 아래 순서대로 진행하면 가장 효율적입니다.
-            특히 모레인 레이크 셔틀은 가장 먼저 확인하는 것을 추천합니다.
+            아래 순서대로 예약을 진행하면 원하는 날짜와 시간을 확보하기 쉽습니다.
+            특히 모레인 레이크 셔틀은 예약 경쟁이 가장 치열하므로 가장 먼저 진행하는 것을 추천합니다.
 
         </p>
 
@@ -467,12 +393,13 @@
 
             <div class="booking-step">
 
-                <h3>① 모레인 레이크 셔틀 예약</h3>
+                <h3>① 모레인 레이크 셔틀</h3>
 
                 <p>
 
-                    여행 날짜에 맞는 셔틀이 오픈되면 가장 먼저 예약합니다.
-                    성수기에는 빠르게 마감될 수 있으므로 최우선으로 진행하세요.
+                    여행 일정이 확정되면 가장 먼저 예약합니다.<br>
+                    성수기에는 예약 오픈 후 빠르게 마감될 수 있으므로
+                    Parks Canada 예약 일정을 미리 확인하세요.
 
                 </p>
 
@@ -480,12 +407,12 @@
 
             <div class="booking-step">
 
-                <h3>② 밴프 곤돌라 예약</h3>
+                <h3>② 밴프 곤돌라</h3>
 
                 <p>
 
-                    오후 시간대를 추천합니다.
-                    일몰 시간대는 특히 인기가 많아 미리 예약하는 것이 좋습니다.
+                    원하는 시간대를 선택해 예약합니다.<br>
+                    오후 시간대를 이용하면 이후 밴프 시내 관광과 자연스럽게 이어집니다.
 
                 </p>
 
@@ -493,25 +420,12 @@
 
             <div class="booking-step">
 
-                <h3>③ 미네완카 크루즈 예약</h3>
+                <h3>③ 미네완카 크루즈</h3>
 
                 <p>
 
-                    추천 예약 시간은 <strong>오전 10:00</strong>입니다.
-                    09:30까지 선착장에 도착하면 여유롭게 탑승할 수 있습니다.
-
-                </p>
-
-            </div>
-
-            <div class="booking-step">
-
-                <h3>④ 레이크 루이스 곤돌라</h3>
-
-                <p>
-
-                    일정 변경 시 이용할 수 있는 선택 예약입니다.
-                    플랜 B로 생각하면 좋습니다.
+                    추천 시간은 <strong>오전 10:00</strong>입니다.<br>
+                    체크인은 최소 30분 전에 완료하는 것이 좋습니다.
 
                 </p>
 
@@ -537,12 +451,12 @@
 
             <div class="tip-card">
 
-                <h4>🕘 오픈 시간 확인</h4>
+                <h4>🕘 예약 오픈 시간 미리 확인</h4>
 
                 <p>
 
-                    예약 오픈 시간 전에 로그인해 두면
-                    원하는 시간대를 선택할 가능성이 높아집니다.
+                    예약 시작 시간보다 조금 일찍 로그인하여
+                    원하는 날짜와 시간을 빠르게 선택하는 것이 좋습니다.
 
                 </p>
 
@@ -550,12 +464,12 @@
 
             <div class="tip-card">
 
-                <h4>💳 결제수단 준비</h4>
+                <h4>💳 해외 결제 카드 준비</h4>
 
                 <p>
 
-                    해외 결제가 가능한 신용카드를
-                    미리 준비해 두면 예약이 훨씬 빠릅니다.
+                    해외 온라인 결제가 가능한 신용카드 또는 체크카드를
+                    미리 준비하고 정상적으로 결제가 가능한지 확인하세요.
 
                 </p>
 
@@ -563,12 +477,25 @@
 
             <div class="tip-card">
 
-                <h4>📧 이메일 확인</h4>
+                <h4>📧 예약 확인 메일 보관</h4>
 
                 <p>
 
-                    예약 완료 메일은 여행 전까지 보관하고
-                    휴대폰에서도 바로 확인할 수 있도록 저장해 두세요.
+                    예약 완료 이메일과 예약번호는 삭제하지 말고,
+                    휴대폰에도 캡처하여 오프라인에서도 확인할 수 있도록 준비하세요.
+
+                </p>
+
+            </div>
+
+            <div class="tip-card">
+
+                <h4>👨‍👩‍👧‍👦 인원 확인</h4>
+
+                <p>
+
+                    예약 전 인원수와 연령 구분(성인·어린이)을 다시 한번 확인하여
+                    현장에서 문제가 발생하지 않도록 합니다.
 
                 </p>
 
@@ -590,19 +517,21 @@
 
         <div class="warning-box">
 
-            <h3>⚠️ 예약 시 주의사항</h3>
+            <h3>⚠️ 예약 시 꼭 확인하세요</h3>
 
             <ul>
 
-                <li>예약 날짜와 여행 날짜가 일치하는지 반드시 확인하세요.</li>
+                <li>여권 영문 이름과 예약자 이름이 일치하는지 확인합니다.</li>
 
-                <li>예약 완료 메일을 받았는지 확인하세요.</li>
+                <li>예약 날짜와 여행 일정이 정확히 맞는지 다시 확인합니다.</li>
 
-                <li>예약 변경 및 취소 가능 기간을 미리 확인하세요.</li>
+                <li>예약 완료 이메일을 반드시 수신했는지 확인합니다.</li>
 
-                <li>여권 영문 이름과 예약자 이름이 동일한지 확인하세요.</li>
+                <li>취소 및 변경 가능 기간을 예약 전에 확인합니다.</li>
 
-                <li>현장 도착 권장 시간을 꼭 지켜주세요.</li>
+                <li>예약 시간보다 20~30분 일찍 도착하는 것을 권장합니다.</li>
+
+                <li>예약 확인서와 QR코드는 휴대폰에 저장해 두면 편리합니다.</li>
 
             </ul>
 
@@ -616,7 +545,11 @@
 <!-- PART 4 : 공식 예약 사이트 -->
 <!-- ===================================================== -->
 
-<section class="booking-section" id="links">
+<!-- ===================================================== -->
+<!-- PART 4 : 공식 예약 사이트 -->
+<!-- ===================================================== -->
+
+<section class="booking-section" id="official-links">
 
     <div class="container">
 
@@ -631,7 +564,8 @@
 
         <div class="link-grid">
 
-            <!-- Moraine Shuttle -->
+            <!-- Moraine -->
+
             <div class="link-card">
 
                 <h4>🚍 모레인 레이크 셔틀</h4>
@@ -640,198 +574,6 @@
 
                     Parks Canada 공식 예약 시스템
 
-                </p>
-
-                <a href="#" class="booking-btn">
-
-                    예약 사이트 이동
-
-                </a>
-
-            </div>
-
-            <!-- Banff Gondola -->
-            <div class="link-card">
-
-                <h4>🚡 밴프 곤돌라</h4>
-
-                <p>
-
-                    Banff Jasper Collection 공식 홈페이지
-
-                </p>
-
-                <a href="#" class="booking-btn">
-
-                    예약 사이트 이동
-
-                </a>
-
-            </div>
-
-            <!-- Lake Louise Gondola -->
-            <div class="link-card">
-
-                <h4>🚠 레이크 루이스 곤돌라</h4>
-
-                <p>
-
-                    Lake Louise Ski Resort 공식 홈페이지
-
-                </p>
-
-                <a href="#" class="booking-btn">
-
-                    예약 사이트 이동
-
-                </a>
-
-            </div>
-
-            <!-- Minnewanka Cruise -->
-            <div class="link-card">
-
-                <h4>🚢 미네완카 크루즈</h4>
-
-                <p>
-
-                    Banff Jasper Collection 공식 홈페이지
-
-                </p>
-
-                <a href="#" class="booking-btn">
-
-                    예약 사이트 이동
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- RESERVATION GUIDE -->
-<!-- ===================================================== -->
-
-<section class="booking-section">
-
-    <div class="container">
-
-        <h2>📝 예약 전 확인사항</h2>
-
-        <div class="booking-checklist">
-
-            <div class="check-item">
-
-                <h4>📅 일정 확인</h4>
-
-                <ul>
-
-                    <li>✔ 여행 날짜 확인</li>
-
-                    <li>✔ 방문 순서 확인</li>
-
-                    <li>✔ 시간 중복 여부 확인</li>
-
-                    <li>✔ 이동 시간 확인</li>
-
-                </ul>
-
-            </div>
-
-            <div class="check-item">
-
-                <h4>👨‍👩‍👧‍👦 인원 확인</h4>
-
-                <ul>
-
-                    <li>✔ 총 6명</li>
-
-                    <li>✔ 성인 4명</li>
-
-                    <li>✔ 어린이 2명</li>
-
-                    <li>✔ 예약 인원 확인</li>
-
-                </ul>
-
-            </div>
-
-            <div class="check-item">
-
-                <h4>💳 결제 준비</h4>
-
-                <ul>
-
-                    <li>✔ 해외 결제 카드</li>
-
-                    <li>✔ 예약자 정보</li>
-
-                    <li>✔ 이메일 주소</li>
-
-                    <li>✔ 연락처</li>
-
-                </ul>
-
-            </div>
-
-            <div class="check-item">
-
-                <h4>📧 예약 완료 후</h4>
-
-                <ul>
-
-                    <li>✔ 확인 메일 저장</li>
-
-                    <li>✔ PDF 다운로드</li>
-
-                    <li>✔ 휴대폰 저장</li>
-
-                    <li>✔ 가족과 공유</li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- PART 5 : 예약 사이트 이용 팁 & FAQ -->
-<!-- ===================================================== -->
-
-<!-- ===================================================== -->
-<!-- OFFICIAL RESERVATION LINKS -->
-<!-- ===================================================== -->
-
-<section class="booking-section">
-
-    <div class="container">
-
-        <h2>🔗 공식 예약 사이트 바로가기</h2>
-
-        <p class="section-desc">
-
-            아래 버튼은 모두 공식 홈페이지입니다.
-            예약 전 운영 일정과 요금을 다시 한번 확인하세요.
-
-        </p>
-
-        <div class="link-grid">
-
-            <div class="link-card">
-
-                <h4>🚍 Moraine Lake Shuttle</h4>
-
-                <p>
-                    Parks Canada 공식 예약
                 </p>
 
                 <a class="booking-btn"
@@ -845,12 +587,16 @@
 
             </div>
 
+            <!-- Gondola -->
+
             <div class="link-card">
 
-                <h4>🚡 Banff Gondola</h4>
+                <h4>🚡 밴프 곤돌라</h4>
 
                 <p>
+
                     Banff Jasper Collection
+
                 </p>
 
                 <a class="booking-btn"
@@ -864,31 +610,16 @@
 
             </div>
 
-            <div class="link-card">
-
-                <h4>🚠 Lake Louise Gondola</h4>
-
-                <p>
-                    Lake Louise Ski Resort
-                </p>
-
-                <a class="booking-btn"
-                   href="https://www.skilouise.com/"
-                   target="_blank"
-                   rel="noopener">
-
-                    공식 예약하기
-
-                </a>
-
-            </div>
+            <!-- Cruise -->
 
             <div class="link-card">
 
-                <h4>🚢 Lake Minnewanka Cruise</h4>
+                <h4>🚢 미네완카 크루즈</h4>
 
                 <p>
+
                     Banff Jasper Collection
+
                 </p>
 
                 <a class="booking-btn"
@@ -904,159 +635,23 @@
 
         </div>
 
-    </div>
+        <div class="recommend-box">
 
-</section>
-
-<!-- ===================================================== -->
-<!-- OPENING SCHEDULE -->
-<!-- ===================================================== -->
-
-<section class="booking-section">
-
-    <div class="container">
-
-        <h2>📆 예약 오픈 시기</h2>
-
-        <div class="faq-grid">
-
-            <div class="faq-card">
-
-                <h3>🚍 Moraine Lake Shuttle</h3>
-
-                <p>
-
-                    • 시즌 시작 전 여러 차례 예약이 오픈됩니다.<br>
-                    • Parks Canada에서 일정이 공지됩니다.<br>
-                    • 가장 먼저 확인해야 하는 예약입니다.
-
-                </p>
-
-            </div>
-
-            <div class="faq-card">
-
-                <h3>🚡 Banff Gondola</h3>
-
-                <p>
-
-                    • 수개월 전부터 예약 가능합니다.<br>
-                    • 인기 시간은 빨리 마감됩니다.
-
-                </p>
-
-            </div>
-
-            <div class="faq-card">
-
-                <h3>🚠 Lake Louise Gondola</h3>
-
-                <p>
-
-                    • 시즌 운영 일정에 맞춰 예약 가능합니다.<br>
-                    • 현장 구매도 가능하지만 예약을 권장합니다.
-
-                </p>
-
-            </div>
-
-            <div class="faq-card">
-
-                <h3>🚢 Minnewanka Cruise</h3>
-
-                <p>
-
-                    • 시즌 동안 예약 가능합니다.<br>
-                    • 오전 10시 탑승을 추천합니다.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- CANCELLATION -->
-<!-- ===================================================== -->
-
-<section class="booking-section">
-
-    <div class="container">
-
-        <h2>🔄 변경 및 취소</h2>
-
-        <div class="warning-box">
-
-            <ul>
-
-                <li>예약 후 확인 이메일을 반드시 저장하세요.</li>
-
-                <li>예약마다 변경·취소 정책이 다릅니다.</li>
-
-                <li>예약 전 취소 가능 기간을 확인하세요.</li>
-
-                <li>기상 악화 시 운영 정책을 확인하세요.</li>
-
-                <li>출발 20~30분 전 도착을 권장합니다.</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- TRIP MEMO -->
-<!-- ===================================================== -->
-
-<section class="booking-section">
-
-    <div class="container">
-
-        <div class="final-message">
-
-            <h2>✈️ 우리 가족 예약 메모</h2>
+            <h3>💡 예약 순서 추천</h3>
 
             <p>
 
-                ✔ 여행 인원 : 6명
+                ✔ 모레인 레이크 셔틀 예약<br>
+                ✔ 밴프 곤돌라 예약<br>
+                ✔ 미네완카 크루즈 예약
 
             </p>
 
             <p>
 
-                ✔ 모레인 셔틀 예약 필수
-
-            </p>
-
-            <p>
-
-                ✔ 밴프 곤돌라 오후 이용
-
-            </p>
-
-            <p>
-
-                ✔ 미네완카 크루즈 오전 10:00 예약 추천
-
-            </p>
-
-            <p>
-
-                ✔ 레이크 루이스 곤돌라는 일정에 따라 선택
-
-            </p>
-
-            <p>
-
-                모든 예약이 완료되면 예약번호와 확인 이메일을
-                여행 폴더와 휴대폰에 함께 보관하면 가장 편리합니다.
+                밴프 곤돌라와 미네완카 크루즈는
+                같은 공식 홈페이지(Banff Jasper Collection)에서
+                함께 예약하면 편리합니다.
 
             </p>
 
@@ -1067,10 +662,10 @@
 </section>
 
 <!-- ===================================================== -->
-<!-- RESERVATION GUIDE -->
+<!-- PART 5 : 예약 화면 예시 -->
 <!-- ===================================================== -->
 
-<section class="booking-section">
+<section class="booking-section" id="screens">
 
     <div class="container">
 
@@ -1079,11 +674,13 @@
         <p class="section-desc">
 
             실제 예약 전에 화면 구성을 미리 확인하면
-            훨씬 빠르게 예약할 수 있습니다.
+            예약 시간을 단축할 수 있습니다.
 
         </p>
 
         <div class="faq-grid">
+
+            <!-- Moraine -->
 
             <div class="faq-card">
 
@@ -1095,17 +692,22 @@
 
                 <p>
 
-                    Parks Canada 예약 시스템입니다.<br>
+                    Parks Canada 예약 시스템입니다.<br><br>
 
-                    날짜 → 시간 → 인원 → 결제 순서로 진행됩니다.
+                    ① 날짜 선택<br>
+                    ② 시간 선택<br>
+                    ③ 인원 선택<br>
+                    ④ 결제
 
                 </p>
 
             </div>
 
+            <!-- Gondola -->
+
             <div class="faq-card">
 
-                <h3>🚡 밴프 곤돌라</h3>
+                <h3>🚡 밴프 곤돌라 / 🚢 미네완카 크루즈</h3>
 
                 <img src="images/booking/banff-gondola.png"
                      alt="밴프 곤돌라 예약 화면"
@@ -1113,10 +715,11 @@
 
                 <p>
 
-                    Banff Jasper Collection 예약 시스템입니다.<br>
+                    Banff Jasper Collection 예약 시스템입니다.<br><br>
 
-                    밴프 곤돌라와 미네완카 크루즈를
-                    함께 예약할 수 있습니다.
+                    밴프 곤돌라와
+                    미네완카 크루즈를
+                    같은 사이트에서 함께 예약할 수 있습니다.
 
                 </p>
 
@@ -1129,47 +732,11 @@
 </section>
 
 <!-- ===================================================== -->
-<!-- MINNEWANKA GUIDE -->
+<!-- PART 5 : 예약 완료 체크 -->
 <!-- ===================================================== -->
 
-<section class="booking-section">
-
-    <div class="container">
-
-        <div class="recommend-box">
-
-            <h3>🚢 미네완카 크루즈 예약 안내</h3>
-
-            <p>
-
-                미네완카 크루즈는
-                <strong>Banff Jasper Collection</strong>에서 운영합니다.
-
-            </p>
-
-            <p>
-
-                밴프 곤돌라와 같은 공식 사이트에서
-                함께 예약할 수 있어 편리합니다.
-
-            </p>
-
-            <p>
-
-                ✔ 추천 예약 시간 : <strong>오전 10:00</strong><br>
-                ✔ 체크인 : 09:30<br>
-                ✔ 운항 시간 : 약 1시간
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
 <!-- ===================================================== -->
-<!-- RESERVATION CHECK -->
+<!-- PART 5 : 예약 완료 체크 -->
 <!-- ===================================================== -->
 
 <section class="booking-section">
@@ -1178,21 +745,28 @@
 
         <h2>✅ 예약 완료 체크</h2>
 
+        <p class="section-desc">
+
+            예약이 끝났다면 아래 항목을 확인하여
+            출발 전까지 안전하게 보관하세요.
+
+        </p>
+
         <div class="booking-checklist">
 
             <div class="check-item">
 
-                <h4>예약 완료 후</h4>
+                <h4>📧 예약 확인</h4>
 
                 <ul>
 
-                    <li>✔ 예약 확인 이메일 저장</li>
+                    <li>✔ 예약 확인 이메일 수신</li>
 
-                    <li>✔ 예약번호 캡처</li>
+                    <li>✔ 예약번호 저장</li>
 
-                    <li>✔ 가족 단톡방 공유</li>
+                    <li>✔ QR코드 확인</li>
 
-                    <li>✔ 여행 폴더에 백업</li>
+                    <li>✔ 휴대폰 캡처 저장</li>
 
                 </ul>
 
@@ -1200,7 +774,7 @@
 
             <div class="check-item">
 
-                <h4>출발 전 확인</h4>
+                <h4>👨‍👩‍👧‍👦 여행 정보 확인</h4>
 
                 <ul>
 
@@ -1208,7 +782,43 @@
 
                     <li>✔ 예약 시간 확인</li>
 
+                    <li>✔ 예약 인원 확인</li>
+
+                    <li>✔ 영문 이름 확인</li>
+
+                </ul>
+
+            </div>
+
+            <div class="check-item">
+
+                <h4>📂 백업</h4>
+
+                <ul>
+
+                    <li>✔ 가족 단톡방 공유</li>
+
+                    <li>✔ 클라우드 저장</li>
+
+                    <li>✔ 여행 폴더 백업</li>
+
+                    <li>✔ 오프라인 확인 가능</li>
+
+                </ul>
+
+            </div>
+
+            <div class="check-item">
+
+                <h4>🚗 출발 전</h4>
+
+                <ul>
+
                     <li>✔ 체크인 시간 확인</li>
+
+                    <li>✔ 이동 시간 확인</li>
+
+                    <li>✔ 주차 위치 확인</li>
 
                     <li>✔ 신분증 준비</li>
 
@@ -1223,11 +833,7 @@
 </section>
 
 <!-- ===================================================== -->
-<!-- PART 7 : 비용 및 예약 현황 -->
-<!-- ===================================================== -->
-
-<!-- ===================================================== -->
-<!-- PART 7 : 비용 및 예약 현황 -->
+<!-- 예상 예약 비용 -->
 <!-- ===================================================== -->
 
 <section class="booking-section">
@@ -1237,8 +843,10 @@
         <h2>💰 예상 예약 비용</h2>
 
         <p class="section-desc">
-            2027년 여행 기준 예상 금액입니다.<br>
+
+            아래 금액은 예상 금액이며,
             실제 예약 시 환율과 시즌에 따라 달라질 수 있습니다.
+
         </p>
 
         <div class="price-table">
@@ -1250,7 +858,9 @@
                     <tr>
 
                         <th>예약 항목</th>
+
                         <th>예상 비용</th>
+
                         <th>비고</th>
 
                     </tr>
@@ -1262,24 +872,30 @@
                     <tr>
 
                         <td>🚍 모레인 레이크 셔틀</td>
-                        <td>약 CAD 8 ~ 12 /인</td>
-                        <td>왕복</td>
+
+                        <td>예약 시 확인</td>
+
+                        <td>Parks Canada</td>
 
                     </tr>
 
                     <tr>
 
                         <td>🚡 밴프 곤돌라</td>
+
                         <td>예약 시 확인</td>
-                        <td>날짜별 변동 요금</td>
+
+                        <td>날짜별 변동</td>
 
                     </tr>
 
                     <tr>
 
                         <td>🚢 미네완카 크루즈</td>
+
                         <td>예약 시 확인</td>
-                        <td>성인 기준</td>
+
+                        <td>시즌별 변동</td>
 
                     </tr>
 
@@ -1293,49 +909,9 @@
 
 </section>
 
-<section class="booking-section">
-
-    <div class="container">
-
-        <h2>📋 예약 진행 체크리스트</h2>
-
-        <div class="booking-checklist">
-
-            <div class="check-item">
-
-                <h4>예약 전</h4>
-
-                <ul>
-
-                    <li>☐ 여행 일정 최종 확정</li>
-                    <li>☐ 여권 영문 이름 확인</li>
-                    <li>☐ 해외 결제 가능한 카드 준비</li>
-                    <li>☐ 예약 일정 가족과 공유</li>
-
-                </ul>
-
-            </div>
-
-            <div class="check-item">
-
-                <h4>예약 완료 후</h4>
-
-                <ul>
-
-                    <li>☐ 예약번호 저장</li>
-                    <li>☐ 이메일 확인</li>
-                    <li>☐ 휴대폰에 예약 화면 저장</li>
-                    <li>☐ 출발 전 다시 한 번 확인</li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+<!-- ===================================================== -->
+<!-- 예약 전 최종 체크 -->
+<!-- ===================================================== -->
 
 <section class="booking-section">
 
@@ -1343,18 +919,17 @@
 
         <div class="recommend-box">
 
-            <h3>💡 예약 팁</h3>
+            <h3>📝 예약 전 최종 확인</h3>
 
             <p>
-                • 모레인 레이크 셔틀은 예약 오픈과 동시에 빠르게 마감될 수 있으므로 가장 먼저 예약합니다.
-            </p>
 
-            <p>
-                • 밴프 곤돌라와 미네완카 크루즈는 같은 공식 사이트(Banff Jasper Collection)에서 함께 예약하면 편리합니다.
-            </p>
+                □ 해외 결제 가능한 카드 준비<br>
+                □ 여권 영문 이름 확인<br>
+                □ 예약 날짜 및 시간 확인<br>
+                □ 예약 확인 이메일 저장<br>
+                □ QR코드 캡처 및 백업<br>
+                □ 가족들과 예약 정보 공유
 
-            <p>
-                • 모든 예약 확인 이메일은 여행 전까지 보관하고, 휴대폰에도 캡처해 두는 것을 추천합니다.
             </p>
 
         </div>
@@ -1364,10 +939,14 @@
 </section>
 
 <!-- ===================================================== -->
-<!-- PART 8 : FAQ -->
+<!-- PART 6 : FAQ -->
 <!-- ===================================================== -->
 
-<section class="booking-section">
+<!-- ===================================================== -->
+<!-- PART 6 : FAQ -->
+<!-- ===================================================== -->
+
+<section class="booking-section" id="faq">
 
     <div class="container">
 
@@ -1375,7 +954,7 @@
 
         <p class="section-desc">
 
-            예약 전 가장 많이 궁금해하는 내용을 정리했습니다.
+            예약 전에 가장 많이 궁금해하는 내용을 정리했습니다.
 
         </p>
 
@@ -1400,8 +979,9 @@
 
                 <p>
 
-                    두 시설 모두 Banff Jasper Collection에서 운영하므로
-                    같은 공식 사이트에서 함께 예약할 수 있습니다.
+                    아닙니다.
+                    두 시설 모두 <strong>Banff Jasper Collection</strong>에서 운영하며,
+                    같은 공식 홈페이지에서 함께 예약할 수 있습니다.
 
                 </p>
 
@@ -1413,7 +993,7 @@
 
                 <p>
 
-                    출력하지 않아도 되지만,
+                    출력은 필수는 아니지만,
                     예약 이메일과 QR코드를 휴대폰에 저장해 두는 것을 추천합니다.
 
                 </p>
@@ -1422,7 +1002,7 @@
 
             <div class="faq-card">
 
-                <h3>Q. 예약 시간을 놓치면 어떻게 되나요?</h3>
+                <h3>Q. 예약 시간보다 늦게 도착하면 어떻게 되나요?</h3>
 
                 <p>
 
@@ -1439,7 +1019,7 @@
 
                 <p>
 
-                    예약 상품마다 취소 및 변경 규정이 다르므로
+                    예약 상품마다 변경 및 취소 규정이 다르므로
                     예약 시 안내되는 조건을 반드시 확인하세요.
 
                 </p>
@@ -1467,5 +1047,67 @@
 </section>
 
 <!-- ===================================================== -->
-<!-- END OF BOOKING PAGE -->
+<!-- TRIP MEMO -->
 <!-- ===================================================== -->
+
+<section class="booking-section">
+
+    <div class="container">
+
+        <div class="final-message">
+
+            <h2>✈️ 우리 가족 예약 메모</h2>
+
+            <p>✔ 여행 인원 : 6명</p>
+
+            <p>✔ 모레인 레이크 셔틀 최우선 예약</p>
+
+            <p>✔ 밴프 곤돌라 오후 이용 예정</p>
+
+            <p>✔ 미네완카 크루즈 오전 10:00 예약 추천</p>
+
+            <p>✔ 예약 확인 이메일 및 QR코드 보관</p>
+
+            <p>
+
+                예약이 모두 완료되면
+                예약번호와 확인 이메일을
+                여행 폴더와 휴대폰에 함께 저장해 두세요.
+
+                <br><br>
+
+                즐거운 캐나다 로키 여행 되세요! 🇨🇦
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <div class="container">
+
+        <p>
+
+            © 2027 SY-SY CANADA 2027 Travel Guide
+
+        </p>
+
+    </div>
+
+</footer>
+
+<a href="index.html" class="floating-home">
+
+    🏠 HOME
+
+</a>
+
+</body>
+
+</html>
