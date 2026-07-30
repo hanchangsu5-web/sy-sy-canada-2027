@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>비행기 예약</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    margin:0;
+    background:#eef4fb;
+    font-family:'Noto Sans KR',sans-serif;
+    color:#333;
+}
+
+.flight-header{
+    background:linear-gradient(135deg,#0d47a1,#1976d2);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.flight-header h1{
+    margin:0;
+    font-size:2.4rem;
+}
+
+.flight-header p{
+    margin-top:12px;
+    opacity:.9;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.section{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:35px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.section h2{
+    margin-top:0;
+    color:#0d47a1;
+}
+
+.flight-info{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.info-box{
+
+    background:#f8fbff;
+
+    border-left:5px solid #1976d2;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+.compare-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.compare-table th{
+
+    background:#1976d2;
+
+    color:white;
+
+    padding:12px;
+
+}
+
+.compare-table td{
+
+    padding:12px;
+
+    border-bottom:1px solid #ddd;
+
+    text-align:center;
+
+}
+
+.recommend{
+
+    color:#1976d2;
+
+    font-weight:bold;
+
+}
+
+.note{
+
+    background:#fff8e1;
+
+    border-left:5px solid orange;
+
+    padding:18px;
+
+    border-radius:10px;
+
+    margin-top:20px;
+
+}
+
+@media(max-width:800px){
+
+.flight-info{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="flight-header">
+
+<h1>✈ 비행기 예약 가이드</h1>
+
+<p>
+
+캐나다 여행 항공권 예약부터 체크인까지
+
+</p>
+
+</header>
+
+<div class="container">
+
+<section class="section">
+
+<h2>① 인천 → 캘거리</h2>
+
+<div class="flight-info">
+
+<div class="info-box">
+
+<h3>운항 항공사</h3>
+
+<p>
+
+<strong>WestJet 직항</strong>
+
+</p>
+
+<p>
+
+현재 직항 노선은 웨스트젯이 유일.
+
+</p>
+
+</div>
+
+<div class="info-box">
+
+<h3>예약 체크</h3>
+
+<ul>
+
+<li>□ 항공권 예약</li>
+
+<li>□ 좌석 지정</li>
+
+<li>□ 위탁수하물 확인</li>
+
+<li>□ 모바일 체크인</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="note">
+
+직항이므로 가격 비교보다는
+
+예약 시기와 좌석 확보가 중요합니다.
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>② 캘거리 → 밴쿠버 비교</h2>
+
+<table class="compare-table">
+
+<tr>
+
+<th>항공사</th>
+
+<th>추천</th>
+
+<th>수하물</th>
+
+<th>가격</th>
+
+<th>비고</th>
+
+</tr>
+
+<tr>
+
+<td>WestJet</td>
+
+<td class="recommend">★★★★★</td>
+
+<td>포함 / 옵션</td>
+
+<td>$$</td>
+
+<td>국내선 추천</td>
+
+</tr>
+
+<tr>
+
+<td>Air Canada</td>
+
+<td>★★★★☆</td>
+
+<td>포함 / 옵션</td>
+
+<td>$$</td>
+
+<td>편수 많음</td>
+
+</tr>
+
+<tr>
+
+<td>Flair</td>
+
+<td>★★☆☆☆</td>
+
+<td>대부분 추가요금</td>
+
+<td>$</td>
+
+<td>LCC</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section class="section">
+
+<h2>③ 밴쿠버 → 인천 비교</h2>
+
+<table class="compare-table">
+
+<tr>
+
+<th>항공사</th>
+
+<th>직항</th>
+
+<th>수하물</th>
+
+<th>가격</th>
+
+<th>추천</th>
+
+</tr>
+
+<tr>
+
+<td>Air Canada</td>
+
+<td>O</td>
+
+<td>포함</td>
+
+<td>$$$</td>
+
+<td class="recommend">★★★★★</td>
+
+</tr>
+
+<tr>
+
+<td>대한항공</td>
+
+<td>O</td>
+
+<td>포함</td>
+
+<td>$$$$</td>
+
+<td>★★★★☆</td>
+
+</tr>
+
+<tr>
+
+<td>웨스트젯(경유)</td>
+
+<td>X</td>
+
+<td>조건별</td>
+
+<td>$$</td>
+
+<td>★★★☆☆</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section class="section">
+
+<h2>④ 수하물 규정 비교</h2>
+
+<table class="compare-table">
+
+<tr>
+<th>항공사</th>
+<th>기내수하물</th>
+<th>위탁수하물</th>
+<th>비고</th>
+</tr>
+
+<tr>
+<td>WestJet</td>
+<td>기본 포함</td>
+<td>운임에 따라 다름</td>
+<td>예약 시 반드시 확인</td>
+</tr>
+
+<tr>
+<td>Air Canada</td>
+<td>기본 포함</td>
+<td>운임에 따라 다름</td>
+<td>Standard / Flex 차이</td>
+</tr>
+
+<tr>
+<td>대한항공</td>
+<td>기본 포함</td>
+<td>대부분 포함</td>
+<td>국제선 기준 유리</td>
+</tr>
+
+<tr>
+<td>Flair</td>
+<td>추가요금 가능</td>
+<td>추가요금</td>
+<td>가장 저렴하지만 옵션 비용 확인</td>
+</tr>
+
+</table>
+
+<div class="note">
+
+<strong>TIP</strong><br><br>
+
+항공권 가격만 보지 말고<br>
+
+<strong>위탁수하물 포함 여부</strong>를 반드시 확인한다.
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>⑤ 모바일 체크인</h2>
+
+<div class="flight-info">
+
+<div class="info-box">
+
+<h3>WestJet</h3>
+
+<ol>
+
+<li>앱 설치</li>
+
+<li>예약번호 입력</li>
+
+<li>출발 24시간 전 체크인</li>
+
+<li>모바일 탑승권 저장</li>
+
+</ol>
+
+</div>
+
+<div class="info-box">
+
+<h3>Air Canada</h3>
+
+<ol>
+
+<li>앱 설치</li>
+
+<li>예약 조회</li>
+
+<li>좌석 확인</li>
+
+<li>모바일 탑승권 저장</li>
+
+</ol>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>⑥ 예약 순서</h2>
+
+<ol>
+
+<li>항공권 예약</li>
+
+<li>좌석 지정</li>
+
+<li>수하물 확인</li>
+
+<li>여권 영문명 확인</li>
+
+<li>모바일 앱 설치</li>
+
+<li>출발 24시간 전 체크인</li>
+
+</ol>
+
+</section>
+
+
+<section class="section">
+
+<h2>⑦ 출발 체크리스트</h2>
+
+<div class="flight-info">
+
+<div class="info-box">
+
+<h3>예약 완료</h3>
+
+<p>□ 항공권 예약</p>
+
+<p>□ 좌석 지정</p>
+
+<p>□ 여권 확인</p>
+
+<p>□ 위탁수하물 확인</p>
+
+<p>□ 모바일 체크인</p>
+
+</div>
+
+<div class="info-box">
+
+<h3>공항 출발 전</h3>
+
+<p>□ 여권</p>
+
+<p>□ e-Ticket</p>
+
+<p>□ 신용카드</p>
+
+<p>□ 환전</p>
+
+<p>□ 여행자보험</p>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</body>
+
+</html>
