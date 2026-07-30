@@ -1,321 +1,281 @@
-body{
+/* =====================================================
+   SY & SY CANADA 2027
+   PROJECT STYLE.CSS
+   Version 2.0
+===================================================== */
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
     margin:0;
-    font-family:Arial, sans-serif;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    font-size:clamp(15px,1vw + 12px,18px);
+}
+
+body{
+
     background:#eef5ff;
+
     color:#333;
-}
 
-/* 헤더 */
-
-header{
-    background:linear-gradient(135deg,#1565c0,#42a5f5);
-    color:white;
-    text-align:center;
-    padding:25px;
-    font-size:32px;
-    font-weight:bold;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
-}
-
-/* 전체 */
-
-.container{
-    max-width:900px;
-    width:95%;
-    margin:auto;
-    padding:25px 15px;
-}
-
-/* 카드 */
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    margin-bottom:35px;
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 18px 40px rgba(0,0,0,.2);
-}
-
-/* 사진 */
-
-.photo{
-    width:100%;
-    height:auto;
-    display:block;
-    border-radius:18px;
-    margin-bottom:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
-
-/* 제목 */
-
-h2{
-    color:#1565c0;
-    margin-top:5px;
-}
-
-/* 정보 */
-
-.info{
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-    padding:10px 0;
-    border-bottom:1px solid #eee;
-}
-
-.info strong{
-    min-width:150px;
-    color:#1565c0;
-}
-
-.info span{
-    flex:1;
-    text-align:right;
-}
-
-/* 버튼 */
-
-.buttons{
-    margin-top:20px;
-}
-
-.map-btn{
-    display:inline-block;
-    background:#1976d2;
-    color:white;
-    text-decoration:none;
-    padding:12px 18px;
-    border-radius:10px;
-    transition:.3s;
-}
-
-.map-btn:hover{
-    background:#0d47a1;
-}
-
-button{
-    background:#1976d2;
-    color:white;
-    border:none;
-    border-radius:12px;
-    padding:15px 25px;
-    font-size:18px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-button:hover{
-    background:#0d47a1;
-}
-
-/* 모바일 */
-
-@media(max-width:768px){
-
-header{
-    font-size:24px;
-    padding:20px;
-}
-
-.container{
-    width:95%;
-    padding:15px;
-}
-
-.info{
-    flex-direction:column;
-    gap:5px;
-}
-
-.info span{
-    text-align:left;
-}
-
-button{
-    width:100%;
-}
-
-}
-
-.memory-card{
-text-align:center;
-}
-
-.photo-placeholder{
-
-width:280px;
-height:180px;
-
-margin:20px auto;
-
-border:3px dashed #4a90e2;
-
-border-radius:18px;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-font-size:20px;
-color:#4a90e2;
-
-background:#eef7ff;
-
-font-weight:bold;
-}
-
-.memory-text{
-
-margin-top:15px;
-
-font-size:18px;
-
-line-height:1.8;
-
-color:#555;
-}
-
-.memory-note{
-
-padding:20px;
-
-background:#fafafa;
-
-border-radius:15px;
-
-line-height:2.3;
-
-font-size:18px;
-}
-
-.rating{
-
-font-size:42px;
-
-text-align:center;
-
-margin:20px 0;
-}
-
-/* 오늘의 한 줄 */
-
-.quote{
-    margin:40px 20px;
-    padding:30px;
-
-    background:white;
-
-    border-left:8px solid #4a90e2;
-
-    border-radius:18px;
-
-    font-size:24px;
-
-    font-style:italic;
-
-    text-align:center;
-
-    color:#444;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
-
-/* 내일 예고 */
-
-.nextday{
-
-    margin:40px 20px;
-
-    padding:35px;
-
-    border-radius:25px;
-
-    background:linear-gradient(135deg,#4a90e2,#87c5ff);
-
-    color:white;
-
-    text-align:center;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-
-.nextday h2{
-
-    color:white;
-
-    margin-bottom:10px;
-}
-
-.nextday h3{
-
-    color:white;
-
-    font-size:34px;
-
-    margin:20px 0;
-}
-
-.nextday p{
-
-    color:white;
-
-    font-size:20px;
+    font-family:
+        "Pretendard",
+        "Noto Sans KR",
+        Arial,
+        sans-serif;
 
     line-height:1.8;
+
+    overflow-x:hidden;
+
 }
 
-/* 푸터 */
+
+/* =====================================================
+   COMMON LAYOUT
+===================================================== */
+
+.container{
+
+    width:min(1100px,94%);
+
+    margin:auto;
+
+    padding:30px 0 60px;
+
+}
+
+main{
+
+    width:min(1100px,94%);
+
+    margin:35px auto 60px;
+
+}
+
+
+/* =====================================================
+   COMMON CARD
+===================================================== */
+
+.card{
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:32px;
+
+    margin:28px 0;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.card h2{
+
+    color:#1565c0;
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+
+    font-weight:800;
+
+}
+
+.card h3{
+
+    font-size:1.4rem;
+
+    margin:20px 0 12px;
+
+    color:#2d2d2d;
+
+}
+
+.card p{
+
+    margin:12px 0;
+
+    line-height:1.9;
+
+}
+
+.card ul,
+.card ol{
+
+    margin:15px 0 15px 28px;
+
+}
+
+.card li{
+
+    margin:8px 0;
+
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:18px;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.button{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    background:#1565c0;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.button:hover{
+
+    background:#0d4f99;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
 
 footer{
 
     text-align:center;
 
-    padding:40px;
+    color:#666;
 
-    color:#777;
+    padding:50px 20px;
 
-    font-size:18px;
 }
 
-/* =======================================================
-   HOME PAGE FINAL STYLE
-   ======================================================= */
+footer hr{
 
-body{
-    margin:0;
-    background:#eef4fb;
-    color:#333;
-    font-family:
-    "Pretendard",
-    "Noto Sans KR",
-    sans-serif;
+    border:none;
+
+    border-top:1px solid #d7d7d7;
+
+    margin-bottom:25px;
+
 }
+
+.footer-copy{
+
+    margin-top:15px;
+
+    font-size:.9rem;
+
+    color:#999;
+
+}
+
+
+/* =====================================================
+   COMMON ANIMATION
+===================================================== */
+
+.fade-up{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================================================
+   HOME PAGE
+===================================================== */
+
+/* =====================================================
+   HOME HERO
+===================================================== */
 
 .home-hero{
 
-    background:
-    linear-gradient(
-    rgba(28,111,214,.88),
-    rgba(63,156,255,.88));
+    position:relative;
 
-    color:white;
+    width:100%;
 
-    padding:70px 25px;
+    min-height:430px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     text-align:center;
+
+    color:#fff;
+
+    background:
+        linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+        url("images/home-hero.jpg") center center/cover no-repeat;
+
+}
+
+.home-hero-overlay{
+
+    padding:40px 20px;
 
 }
 
 .home-hero h1{
 
-    font-size:52px;
+    font-size:3rem;
 
     margin-bottom:15px;
 
@@ -323,73 +283,138 @@ body{
 
 }
 
-.hero-subtitle{
+.home-subtitle{
 
-    font-size:30px;
+    font-size:1.5rem;
+
+    margin-bottom:12px;
 
     opacity:.95;
 
-    margin-bottom:15px;
+}
+
+.home-date{
+
+    font-size:1.05rem;
+
+    letter-spacing:2px;
+
+    opacity:.9;
 
 }
 
-.hero-date{
 
-    font-size:22px;
+/* =====================================================
+   HOME INTRO
+===================================================== */
 
-    opacity:.85;
+.home-intro{
 
-}
-
-.card{
-
-    width:min(1100px,92%);
-
-    margin:28px auto;
-
-    background:white;
-
-    border-radius:24px;
-
-    padding:35px;
-
-    box-shadow:
-
-    0 8px 25px rgba(0,0,0,.08);
+    text-align:center;
 
 }
 
-.card h2{
+.home-intro p{
 
-    color:#1f66c2;
+    max-width:850px;
 
-    font-size:34px;
-
-    margin-bottom:25px;
+    margin:auto;
 
 }
 
-.card p{
 
-    font-size:22px;
+/* =====================================================
+   ACCORDION
+===================================================== */
 
-    line-height:1.9;
+.accordion{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:24px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
 
 }
 
-/* =======================================================
-   HOME BUTTONS
-   ======================================================= */
+.accordion-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#ffffff;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 28px;
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    transition:.25s;
+
+}
+
+.accordion-btn:hover{
+
+    background:#f7f9fc;
+
+}
+
+.arrow{
+
+    transition:.3s;
+
+    font-size:20px;
+
+}
+
+.arrow.open{
+
+    transform:rotate(180deg);
+
+}
+
+.accordion-content{
+
+    display:none;
+
+    padding:28px;
+
+    border-top:1px solid #ececec;
+
+}
+
+.accordion-content.active{
+
+    display:block;
+
+}
+
+
+/* =====================================================
+   HOME GRID
+===================================================== */
 
 .home-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-    gap:22px;
-
-    margin-top:20px;
+    gap:20px;
 
 }
 
@@ -401,51 +426,55 @@ body{
 
     color:#333;
 
-    background:white;
+    background:#fff;
 
-    border-radius:20px;
+    border:1px solid #e4e7ec;
 
-    padding:24px;
+    border-radius:18px;
 
-    border:3px solid #dbeafe;
+    padding:22px;
 
     transition:.25s;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.06);
 
 }
 
 .home-button:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-5px);
 
-    border-color:#3b82f6;
+    border-color:#1565c0;
 
-    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    box-shadow:0 12px 24px rgba(0,0,0,.12);
 
 }
 
 .home-day{
 
-    font-size:18px;
+    display:inline-block;
+
+    background:#1565c0;
+
+    color:#fff;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    font-size:.9rem;
 
     font-weight:700;
 
-    color:#2563eb;
-
-    margin-bottom:12px;
+    margin-bottom:14px;
 
 }
 
 .home-title{
 
-    font-size:28px;
+    font-size:1.25rem;
 
     font-weight:700;
 
-    line-height:1.35;
-
-    margin-bottom:14px;
+    margin-bottom:10px;
 
 }
 
@@ -453,27 +482,14 @@ body{
 
     color:#666;
 
-    font-size:18px;
-
-    line-height:1.6;
-
-}
-
-.locked{
-
-    opacity:.45;
-
-    filter:grayscale(.25);
-
-    pointer-events:none;
+    line-height:1.7;
 
 }
 
 
-
-/* =======================================================
-   TOOL MENU
-   ======================================================= */
+/* =====================================================
+   TOOL GRID
+===================================================== */
 
 .tool-grid{
 
@@ -483,479 +499,369 @@ body{
 
     gap:18px;
 
-    margin-top:20px;
-
 }
 
 .tool-card{
 
     background:#f8fbff;
 
-    border:2px solid #d7e8ff;
+    border:1px solid #dce8f8;
 
     border-radius:18px;
 
-    padding:24px;
+    padding:24px 18px;
 
     text-align:center;
 
-    font-size:22px;
+    text-decoration:none;
 
-    font-weight:700;
+    color:#333;
 
     transition:.25s;
 
 }
 
-.tool-card small{
-
-    display:block;
-
-    margin-top:10px;
-
-    color:#777;
-
-    font-size:15px;
-
-    font-weight:500;
-
-}
-
 .tool-card:hover{
 
-    transform:translateY(-5px);
+    background:#eef6ff;
+
+    border-color:#1565c0;
+
+    transform:translateY(-4px);
 
     box-shadow:0 10px 20px rgba(0,0,0,.08);
 
 }
 
+.tool-card strong{
+
+    display:block;
+
+    margin:10px 0 8px;
+
+    font-size:1.05rem;
+
+}
+
+.tool-card small{
+
+    color:#666;
+
+    line-height:1.5;
+
+}
 
 
-/* =======================================================
-   FOOTER
-   ======================================================= */
+/* =====================================================
+   HOME SECTION
+===================================================== */
 
-footer{
+.home-section{
 
-    margin-top:50px;
+    margin-bottom:35px;
+
+}
+
+/* =====================================================
+   DAY PAGE
+===================================================== */
+
+
+/* =====================================================
+   DAY HERO
+===================================================== */
+
+.day-hero{
+
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
+
+    color:#fff;
 
     text-align:center;
 
-    color:#777;
+    padding:70px 25px 60px;
 
-    padding:40px 20px;
-
-    font-size:16px;
+    box-shadow:0 6px 20px rgba(0,0,0,.18);
 
 }
 
-/* =======================================================
-   HERO UPGRADE
-   ======================================================= */
+.day-number{
 
-.home-hero{
+    font-size:1.2rem;
 
-    position:relative;
+    font-weight:700;
 
-    overflow:hidden;
-
-    text-align:center;
-
-    color:white;
-
-    padding:90px 30px;
-
-    background:
-    linear-gradient(
-    rgba(28,111,214,.85),
-    rgba(63,156,255,.88));
-
-}
-
-.home-hero::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-    right:0;
-    bottom:-40px;
-
-    height:80px;
-
-    background:white;
-
-    border-radius:100% 100% 0 0;
-
-}
-
-.home-hero>*{
-
-    position:relative;
-
-    z-index:2;
-
-}
-
-.home-hero h1{
-
-    font-size:60px;
-
-    font-weight:900;
-
-    margin-bottom:20px;
-
-}
-
-.hero-subtitle{
-
-    font-size:30px;
-
-    margin-bottom:10px;
+    letter-spacing:2px;
 
     opacity:.95;
 
-}
-
-.hero-date{
-
-    font-size:22px;
-
-    opacity:.85;
+    margin-bottom:14px;
 
 }
 
+.day-hero h1{
 
+    font-size:3.2rem;
 
-/* =======================================================
-   PROGRESS BAR
-   ======================================================= */
-
-.progress-wrap{
-
-    margin-top:20px;
-
-}
-
-.progress-title{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    font-size:18px;
-
-    font-weight:700;
-
-    margin-bottom:10px;
-
-}
-
-.progress{
-
-    height:14px;
-
-    border-radius:20px;
-
-    background:#dbeafe;
-
-    overflow:hidden;
-
-}
-
-.progress-value{
-
-    width:44%;
-
-    height:100%;
-
-    background:linear-gradient(
-        90deg,
-        #2563eb,
-        #60a5fa);
-
-    border-radius:20px;
-
-}
-
-
-
-/* =======================================================
-   LATEST UPDATE
-   ======================================================= */
-
-.latest-card{
-
-    background:#eef6ff;
-
-    border-left:8px solid #2563eb;
-
-    border-radius:18px;
-
-    padding:22px;
-
-    margin-top:18px;
-
-}
-
-.latest-card h3{
-
-    color:#2563eb;
+    font-weight:800;
 
     margin-bottom:12px;
 
-    font-size:26px;
+}
+
+.day-route{
+
+    font-size:1.5rem;
+
+    opacity:.95;
+
+    margin-bottom:24px;
 
 }
 
-.latest-card p{
+.day-info{
 
-    margin:6px 0;
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
 
 }
 
-
-
-/* =======================================================
-   COUNTDOWN
-   ======================================================= */
-
-.countdown{
-
-    display:inline-block;
-
-    margin-top:25px;
+.day-info span{
 
     background:rgba(255,255,255,.18);
 
-    padding:14px 30px;
+    padding:10px 18px;
 
-    border-radius:50px;
-
-    font-size:26px;
-
-    font-weight:700;
-
-    backdrop-filter:blur(8px);
+    border-radius:999px;
 
 }
 
 
+/* =====================================================
+   INFO BOX
+===================================================== */
 
-/* =======================================================
-   QUOTE
-   ======================================================= */
+.info-box{
 
-.home-quote{
+    background:#eef7ff;
 
-    text-align:center;
+    border-left:6px solid #2196f3;
 
-    font-size:24px;
+    border-radius:16px;
 
-    font-style:italic;
+    padding:22px;
 
-    color:#555;
-
-    margin-top:10px;
-
-}
-
-/* =======================================================
-   RESPONSIVE
-   ======================================================= */
-
-@media (max-width:900px){
-
-.home-hero{
-
-    padding:60px 20px;
+    margin:22px 0;
 
 }
 
-.home-hero h1{
+.info-box h3{
 
-    font-size:40px;
-
-}
-
-.hero-subtitle{
-
-    font-size:22px;
+    margin-top:0;
 
 }
 
-.hero-date{
+.info-box p{
 
-    font-size:18px;
-
-}
-
-.card{
-
-    padding:24px;
-
-}
-
-.card h2{
-
-    font-size:28px;
-
-}
-
-.card p{
-
-    font-size:18px;
-
-}
-
-.home-title{
-
-    font-size:22px;
-
-}
-
-.tool-card{
-
-    font-size:18px;
-
-}
+    margin:10px 0;
 
 }
 
 
+/* =====================================================
+   TIP BOX
+===================================================== */
 
-/* =======================================================
-   SMOOTH EFFECT
-   ======================================================= */
+.tip-box{
 
-html{
+    background:#fff8e8;
 
-    scroll-behavior:smooth;
+    border-left:6px solid #ffb300;
 
-}
+    border-radius:16px;
 
+    padding:22px;
 
-
-/* =======================================================
-   CARD ANIMATION
-   ======================================================= */
-
-.card{
-
-    animation:fadeUp .6s ease both;
-
-}
-
-@keyframes fadeUp{
-
-0%{
-
-    opacity:0;
-
-    transform:translateY(18px);
-
-}
-
-100%{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
+    margin:22px 0;
 
 }
 
 
+/* =====================================================
+   MEMORY BOX
+===================================================== */
 
-/* =======================================================
-   BUTTON EFFECT
-   ======================================================= */
+.memory-box{
 
-.home-button{
+    background:#f9fbff;
 
-    transition:
-
-    transform .25s,
-
-    box-shadow .25s,
-
-    border-color .25s;
-
-}
-
-.home-button:hover{
-
-    transform:translateY(-8px);
-
-}
-
-
-
-/* =======================================================
-   IMAGE STYLE
-   ======================================================= */
-
-img{
-
-    max-width:100%;
+    border:2px dashed #8ab9ff;
 
     border-radius:18px;
 
+    padding:24px;
+
+    margin-top:28px;
+
 }
 
 
-
-/* =======================================================
-   BLOCKQUOTE
-   ======================================================= */
+/* =====================================================
+   QUOTE
+===================================================== */
 
 blockquote{
 
-    background:#eef6ff;
+    background:#eef7ff;
 
-    border-left:6px solid #2563eb;
+    border-left:6px solid #1976d2;
 
-    padding:18px 22px;
+    border-radius:16px;
 
-    margin:20px 0;
+    padding:22px;
+
+    margin:25px 0;
 
     font-style:italic;
 
-    font-size:20px;
+}
+
+
+/* =====================================================
+   PHOTO
+===================================================== */
+
+.main-photo{
+
+    width:100%;
+
+    border-radius:18px;
+
+    margin:22px 0;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.sub-photo-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:14px;
+
+    margin:20px 0;
+
+}
+
+.sub-photo-grid img{
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
 
     border-radius:14px;
 
 }
 
 
+/* =====================================================
+   TRAVEL MEMBER
+===================================================== */
 
-/* =======================================================
-   MEMORY BOX
-   ======================================================= */
+.travel-member{
 
-.memory-box{
-
-    margin-top:18px;
-
-    border:2px dashed #8bbcff;
+    margin-top:40px;
 
     background:#f8fbff;
 
-    border-radius:18px;
+    border:2px solid #d8e8ff;
 
-    padding:25px;
+    border-radius:20px;
 
-    line-height:2;
+    padding:30px;
+
+}
+
+.travel-member h3{
+
+    color:#1565c0;
+
+    margin-bottom:18px;
+
+}
+
+.travel-comment{
+
+    background:#fff;
+
+    border-left:5px solid #1565c0;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    line-height:1.8;
 
 }
 
 
+/* =====================================================
+   DAY LIST
+===================================================== */
 
-/* =======================================================
+.day-checklist{
+
+    margin-top:20px;
+
+    padding-left:22px;
+
+}
+
+.day-checklist li{
+
+    margin:8px 0;
+
+}
+
+
+/* =====================================================
+   HIGHLIGHT
+===================================================== */
+
+.highlight{
+
+    color:#1565c0;
+
+    font-weight:700;
+
+}
+
+.warning{
+
+    color:#d84315;
+
+    font-weight:700;
+
+}
+
+.success{
+
+    color:#2e7d32;
+
+    font-weight:700;
+
+}
+
+/* =====================================================
    TABLE
-   ======================================================= */
+===================================================== */
 
 .info-table{
 
@@ -963,48 +869,270 @@ blockquote{
 
     border-collapse:collapse;
 
-    margin-top:20px;
+    table-layout:fixed;
+
+    margin:20px 0;
+
+    background:#fff;
 
 }
 
 .info-table th{
 
-    background:#2563eb;
+    background:#1565c0;
 
-    color:white;
+    color:#fff;
 
-    padding:12px;
+    padding:14px 10px;
+
+    text-align:center;
 
 }
 
 .info-table td{
 
-    padding:12px;
+    border:1px solid #d9d9d9;
 
-    border-bottom:1px solid #ddd;
+    padding:12px 10px;
 
-}
+    text-align:center;
 
-html, body{
-    overflow-x:hidden;
-    max-width:100%;
-}
+    vertical-align:middle;
 
-img{
-    max-width:100%;
-    height:auto;
-}
-
-.card,
-.memory-box,
-.tip-box,
-blockquote,
-p,
-li{
     word-break:keep-all;
+
     overflow-wrap:break-word;
+
 }
 
-/* =======================================================
-   END
-   ======================================================= */
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:1024px){
+
+    .container,
+    main{
+
+        width:94%;
+
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:768px){
+
+    .card{
+
+        padding:24px;
+
+    }
+
+    .card h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .card h3{
+
+        font-size:1.3rem;
+
+    }
+
+    .day-hero{
+
+        padding:55px 20px;
+
+    }
+
+    .day-hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .day-route{
+
+        font-size:1.2rem;
+
+    }
+
+    .day-info{
+
+        gap:12px;
+
+    }
+
+    .day-info span{
+
+        font-size:.95rem;
+
+    }
+
+    .home-hero{
+
+        min-height:320px;
+
+    }
+
+    .home-hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .home-subtitle{
+
+        font-size:1.2rem;
+
+    }
+
+    .accordion-btn{
+
+        font-size:1.15rem;
+
+        padding:18px 20px;
+
+    }
+
+    .home-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .tool-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .sub-photo-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:480px){
+
+    .card{
+
+        padding:18px;
+
+    }
+
+    .card h2{
+
+        font-size:1.45rem;
+
+    }
+
+    .card h3{
+
+        font-size:1.15rem;
+
+    }
+
+    .day-hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .day-route{
+
+        font-size:1rem;
+
+    }
+
+    .home-hero{
+
+        min-height:270px;
+
+    }
+
+    .home-hero h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .home-subtitle{
+
+        font-size:1rem;
+
+    }
+
+    .tool-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .info-table{
+
+        font-size:.85rem;
+
+    }
+
+    .info-table th,
+    .info-table td{
+
+        padding:8px 6px;
+
+    }
+
+}
+
+
+/* =====================================================
+   PRINT
+===================================================== */
+
+@media print{
+
+    body{
+
+        background:#fff;
+
+    }
+
+    .accordion-content{
+
+        display:block !important;
+
+    }
+
+    .accordion-btn{
+
+        border-bottom:1px solid #ddd;
+
+    }
+
+    .button{
+
+        display:none;
+
+    }
+
+    footer{
+
+        margin-top:40px;
+
+    }
+
+}
