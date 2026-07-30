@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행 체크리스트</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .tool-header{
+            background:linear-gradient(135deg,#2b5876,#4e4376);
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        .tool-header h1{
+            font-size:2.3rem;
+            margin-bottom:10px;
+        }
+
+        .tool-header p{
+            opacity:.9;
+            font-size:1.05rem;
+        }
+
+        .tool-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+            margin:50px auto;
+        }
+
+        .tool-card{
+            background:#fff;
+            border-radius:18px;
+            padding:30px;
+            text-decoration:none;
+            color:#333;
+            box-shadow:0 8px 25px rgba(0,0,0,.08);
+            transition:.25s;
+            border:1px solid #eee;
+        }
+
+        .tool-card:hover{
+            transform:translateY(-8px);
+            box-shadow:0 15px 35px rgba(0,0,0,.15);
+        }
+
+        .tool-icon{
+            font-size:3rem;
+            margin-bottom:15px;
+        }
+
+        .tool-card h2{
+            margin-bottom:10px;
+            color:#0d47a1;
+        }
+
+        .tool-card p{
+            color:#666;
+            line-height:1.6;
+        }
+
+        .tool-button{
+            margin-top:20px;
+            display:inline-block;
+            color:#1565c0;
+            font-weight:bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header class="tool-header">
+
+    <h1>✔ 여행 체크리스트</h1>
+
+    <p>
+        출발 전 반드시 준비해야 하는 항목들을
+        한 곳에서 확인하세요.
+    </p>
+
+</header>
+
+<main class="container">
+
+<div class="tool-grid">
+
+<a href="flight.html" class="tool-card">
+
+<div class="tool-icon">✈</div>
+
+<h2>비행기 예약</h2>
+
+<p>
+
+웨스트젯 / 에어캐나다
+
+<br>
+
+예약방법 · 수하물 · 체크인
+
+</p>
+
+<div class="tool-button">
+
+바로가기 →
+
+</div>
+
+</a>
+
+<a href="rentalcar.html" class="tool-card">
+
+<div class="tool-icon">🚐</div>
+
+<h2>렌터카 예약</h2>
+
+<p>
+
+퍼시피카 / 시에나
+
+<br>
+
+보험 · 차량선택 · 인수/반납
+
+</p>
+
+<div class="tool-button">
+
+바로가기 →
+
+</div>
+
+</a>
+
+<a href="banff-booking.html" class="tool-card">
+
+<div class="tool-icon">🏔</div>
+
+<h2>밴프 예약 필수</h2>
+
+<p>
+
+곤돌라
+
+<br>
+
+모레인 셔틀
+
+<br>
+
+미네완카 크루즈
+
+</p>
+
+<div class="tool-button">
+
+바로가기 →
+
+</div>
+
+</a>
+
+<a href="payment.html" class="tool-card">
+
+<div class="tool-icon">💳</div>
+
+<h2>현지 결제</h2>
+
+<p>
+
+카드
+
+<br>
+
+현금
+
+<br>
+
+환전 및 팁 문화
+
+</p>
+
+<div class="tool-button">
+
+바로가기 →
+
+</div>
+
+</a>
+
+</div>
+
+</main>
+
+</body>
+</html>
