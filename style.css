@@ -1599,251 +1599,529 @@ blockquote{
 
 }
 
-/* =========================================================
-   RENTAL CAR PAGE
-========================================================= */
+/* =====================================================
+   DAY RENEWAL (2027)
+   추가 CSS (기존 CSS 수정 없음)
+===================================================== */
 
-.rental-page .hero-icon{
-    font-size:4rem;
-}
 
-.rating{
-    display:flex;
-    gap:6px;
-    align-items:center;
-    margin-top:10px;
-    font-size:1rem;
-    color:#f5b400;
-}
+/* =====================================================
+   SECTION SUB TITLE
+===================================================== */
 
-.vehicle-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:24px;
-    margin-top:24px;
-}
-
-.vehicle-card{
-    background:#fff;
-    border-radius:18px;
-    padding:24px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.25s;
-}
-
-.vehicle-card:hover{
-    transform:translateY(-6px);
-}
-
-.vehicle-card h3{
-    margin-bottom:12px;
-}
-
-.vehicle-card ul{
-    margin-top:12px;
-    padding-left:18px;
-    line-height:1.8;
-}
-
-.rank-badge{
-    display:inline-block;
-    background:#0f766e;
-    color:#fff;
-    padding:4px 10px;
-    border-radius:30px;
-    font-size:.85rem;
-    margin-bottom:12px;
-}
-
-.compare-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:24px;
-}
-
-.compare-table th{
-    background:#0f766e;
-    color:#fff;
-    padding:14px;
-}
-
-.compare-table td{
-    border-bottom:1px solid #e5e7eb;
-    padding:14px;
-    text-align:center;
-}
-
-.compare-table tr:nth-child(even){
-    background:#f8fafc;
-}
-
-/* 짐 적재 */
-
-.luggage-layout{
-    display:grid;
-    grid-template-columns:repeat(4,60px);
-    gap:10px;
-    justify-content:center;
-    margin:30px 0;
-}
-
-.luggage-box{
-    width:60px;
-    height:60px;
-    border-radius:12px;
-    background:#0f766e;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:bold;
-}
-
-.luggage-box.medium{
-    background:#64748b;
-}
-
-/* 운전자 */
-
-.driver-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:20px;
-    margin-top:24px;
-}
-
-.driver-card{
-    background:#fff;
-    border-left:6px solid #0f766e;
-    padding:22px;
-    border-radius:16px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-
-/* 타임라인 */
-
-.timeline{
-    position:relative;
-    margin:40px 0;
-}
-
-.timeline::before{
-    content:"";
-    position:absolute;
-    left:18px;
-    top:0;
-    bottom:0;
-    width:3px;
-    background:#0f766e;
-}
-
-.timeline-item{
-    position:relative;
-    margin-left:55px;
-    margin-bottom:30px;
-}
-
-.timeline-item::before{
-    content:"";
-    position:absolute;
-    left:-45px;
-    top:4px;
-    width:16px;
-    height:16px;
-    border-radius:50%;
-    background:#0f766e;
-}
-
-/* 실전 팁 */
-
-.tip-box{
-    background:#ecfeff;
-    border-left:6px solid #0891b2;
-    padding:22px;
-    border-radius:14px;
-    margin:20px 0;
-}
-
-.warning-box{
-    background:#fff7ed;
-    border-left:6px solid #ea580c;
-    padding:22px;
-    border-radius:14px;
-    margin:20px 0;
-}
-
-.success-box{
-    background:#ecfdf5;
-    border-left:6px solid #16a34a;
-    padding:22px;
-    border-radius:14px;
-    margin:20px 0;
-}
-
-/* 실제 상황 */
-
-.scenario-card{
-    background:#fff;
-    border-radius:18px;
-    padding:24px;
+.section-subtitle{
+    color:#666;
+    margin-top:-10px;
     margin-bottom:22px;
-    box-shadow:0 8px 28px rgba(0,0,0,.08);
+    font-size:1rem;
 }
 
-.scenario-title{
-    font-size:1.2rem;
+
+/* =====================================================
+   SCHEDULE SUMMARY
+===================================================== */
+
+.schedule-summary{
+    margin-top:20px;
+}
+
+.schedule-summary .info-table td{
+    text-align:left;
+}
+
+.schedule-summary .info-table td:first-child{
+    text-align:center;
     font-weight:700;
-    margin-bottom:14px;
+    width:90px;
 }
 
-.dialog{
-    background:#111827;
-    color:#fff;
-    padding:18px;
-    border-radius:14px;
-    margin:18px 0;
-    font-family:Consolas, monospace;
-    line-height:1.8;
+.schedule-point{
+    background:#eef7ff;
+    border-left:6px solid #1976d2;
+    border-radius:16px;
+    padding:20px;
+    margin-top:20px;
 }
 
-.translation{
-    background:#f8fafc;
-    border-radius:12px;
-    padding:16px;
-    margin-top:12px;
+.schedule-point h3{
+    margin:0 0 10px;
+    color:#1565c0;
 }
 
-/* 체크리스트 */
 
-.check-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:18px;
-    margin-top:24px;
+/* =====================================================
+   MAP PLACEHOLDER
+===================================================== */
+
+.map-placeholder{
+
+    background:#f7fbff;
+
+    border:3px dashed #bcd8ff;
+
+    border-radius:20px;
+
+    min-height:320px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:#777;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    margin:25px 0;
+
 }
 
-.check-item{
+.map-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    justify-content:center;
+
+    margin:20px 0;
+
+}
+
+
+/* =====================================================
+   FOOD TABLE
+===================================================== */
+
+.food-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin:20px 0;
+
     background:#fff;
-    padding:18px;
-    border-radius:14px;
-    box-shadow:0 6px 20px rgba(0,0,0,.08);
+
 }
 
-/* 모바일 */
+.food-table th{
+
+    background:#2e7d32;
+
+    color:#fff;
+
+    padding:14px 10px;
+
+    text-align:center;
+
+}
+
+.food-table td{
+
+    border:1px solid #d9d9d9;
+
+    padding:12px;
+
+    vertical-align:middle;
+
+    text-align:center;
+
+}
+
+.food-table td:nth-child(2){
+
+    text-align:left;
+
+    font-weight:600;
+
+}
+
+.food-table td:nth-child(4){
+
+    text-align:left;
+
+}
+
+.food-table td:nth-child(3),
+.food-table td:nth-child(5),
+.food-table td:nth-child(6){
+
+    white-space:nowrap;
+
+}
+
+
+/* =====================================================
+   PLACE CARD
+===================================================== */
+
+.place-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    margin:28px 0;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.08);
+
+}
+
+.place-title{
+
+    color:#1565c0;
+
+    font-size:1.6rem;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+}
+
+.place-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:18px;
+
+}
+
+.place-meta span{
+
+    background:#eef7ff;
+
+    color:#1565c0;
+
+    border-radius:999px;
+
+    padding:8px 14px;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+}
+
+.place-card h4{
+
+    margin:22px 0 10px;
+
+    color:#1565c0;
+
+    font-size:1.1rem;
+
+}
+
+.place-card p{
+
+    margin:8px 0;
+
+    line-height:1.9;
+
+}
+
+.place-card ul{
+
+    margin:10px 0 0 22px;
+
+}
+
+.place-card li{
+
+    margin:8px 0;
+
+}
+
+/* =====================================================
+   COMMUNICATION / GAS INFO
+===================================================== */
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+.service-card{
+
+    background:#f8fbff;
+
+    border:2px solid #d8e8ff;
+
+    border-radius:18px;
+
+    padding:22px;
+
+}
+
+.service-card h3{
+
+    margin-top:0;
+
+    color:#1565c0;
+
+    font-size:1.15rem;
+
+}
+
+.service-card p{
+
+    margin:10px 0;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   TRAVEL TIP
+===================================================== */
+
+.tip-list{
+
+    display:grid;
+
+    gap:18px;
+
+    margin-top:20px;
+
+}
+
+.tip-item{
+
+    background:#fffef7;
+
+    border-left:6px solid #ffb300;
+
+    border-radius:16px;
+
+    padding:20px;
+
+}
+
+.tip-item h3{
+
+    margin:0 0 10px;
+
+    color:#d68910;
+
+    font-size:1.1rem;
+
+}
+
+.tip-item p{
+
+    margin:0;
+
+    line-height:1.9;
+
+}
+
+
+/* =====================================================
+   BUDGET TABLE
+===================================================== */
+
+.budget-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+    background:#fff;
+
+}
+
+.budget-table th{
+
+    background:#1565c0;
+
+    color:#fff;
+
+    padding:14px;
+
+    text-align:center;
+
+}
+
+.budget-table td{
+
+    border:1px solid #d9d9d9;
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+.budget-table tfoot td{
+
+    background:#eef7ff;
+
+    font-weight:700;
+
+    color:#1565c0;
+
+}
+
+
+/* =====================================================
+   PLACE PHOTO
+===================================================== */
+
+.place-photo{
+
+    margin:18px 0 22px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.place-photo img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+/* =====================================================
+   SMALL BADGE
+===================================================== */
+
+.badge{
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    background:#eef7ff;
+
+    color:#1565c0;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    margin-right:8px;
+
+    margin-bottom:8px;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media (max-width:768px){
 
-    .compare-table{
-        display:block;
-        overflow-x:auto;
+    .food-table{
+
+        font-size:.88rem;
+
     }
 
-    .luggage-layout{
-        grid-template-columns:repeat(3,60px);
+    .food-table th,
+    .food-table td{
+
+        padding:9px 6px;
+
     }
 
-    .timeline-item{
-        margin-left:42px;
+    .place-card{
+
+        padding:22px;
+
+    }
+
+    .place-title{
+
+        font-size:1.35rem;
+
+    }
+
+    .place-meta{
+
+        gap:8px;
+
+    }
+
+    .place-meta span{
+
+        font-size:.85rem;
+
+    }
+
+    .service-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .map-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .map-buttons .button{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .food-table{
+
+        font-size:.8rem;
+
+    }
+
+    .food-table th,
+    .food-table td{
+
+        padding:7px 5px;
+
+    }
+
+    .place-card{
+
+        padding:18px;
+
     }
 
 }
