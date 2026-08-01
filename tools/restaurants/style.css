@@ -1,0 +1,400 @@
+/* ==========================================================
+   Canada Travel Guide - Restaurants
+   style.css
+
+   [1부]
+   기본 레이아웃 및 공통 디자인
+
+   배우기 위한 프로젝트이므로
+   주석을 많이 넣었습니다.
+
+   ========================================================== */
+
+
+/* ==========================
+   기본 설정
+   ========================== */
+
+/* 브라우저마다 다른 기본 여백 제거 */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* 페이지 전체 */
+body{
+
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+
+    background:#f5f7fa;
+
+    color:#333;
+
+    line-height:1.6;
+}
+
+
+/* ==========================
+   화면 전체 컨테이너
+   ========================== */
+
+/*
+   모든 내용을 가운데 정렬한다.
+
+   max-width를 사용하는 이유
+
+   PC에서는 너무 넓어지지 않고
+   모바일에서는 화면을 꽉 채운다.
+*/
+
+.container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:25px;
+
+}
+
+
+/* ==========================
+   페이지 제목
+   ========================== */
+
+.page-title{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+
+}
+
+
+.page-subtitle{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ==========================
+   큰 선택 버튼(지역 선택)
+   ========================== */
+
+/*
+   index.html에서
+
+   캘거리
+   캔모어
+   밴프
+
+   등을 클릭하는 버튼
+*/
+
+.menu-button{
+
+    display:block;
+
+    width:100%;
+
+    background:white;
+
+    color:#333;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ddd;
+
+    font-size:1.05rem;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+
+/* 마우스를 올렸을 때 */
+
+.menu-button:hover{
+
+    background:#2c7be5;
+
+    color:white;
+
+}
+
+
+/* ==========================
+   카드 공통
+
+   앞으로
+
+   맛집 카드
+
+   영어회화 카드
+
+   지도 카드
+
+   등으로 확장 가능
+
+   ========================== */
+
+.card{
+
+    background:white;
+
+    border-radius:14px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border:1px solid #e5e5e5;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.06);
+
+}
+
+/* ==========================
+   음식 종류
+   예) 양식 / 일식 / 한식
+========================== */
+
+.category{
+
+    display:inline-block;
+
+    background:#2c7be5;
+
+    color:white;
+
+    padding:4px 12px;
+
+    border-radius:20px;
+
+    font-size:.85rem;
+
+    font-weight:bold;
+
+    margin-bottom:12px;
+
+}
+
+
+/* ==========================
+   식당 이름
+========================== */
+
+.restaurant-name{
+
+    font-size:1.5rem;
+
+    font-weight:bold;
+
+    margin-bottom:12px;
+
+}
+
+
+/* ==========================
+   추천 별점
+========================== */
+
+.rating{
+
+    color:#f5a623;
+
+    font-size:1.1rem;
+
+    margin-bottom:18px;
+
+}
+
+
+/* ==========================
+   메뉴 표
+
+   메뉴 / 가격 / 추천도
+========================== */
+
+.menu-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-bottom:20px;
+
+}
+
+
+/* 표 제목 */
+
+.menu-table th{
+
+    background:#f2f4f7;
+
+    padding:10px;
+
+    border:1px solid #ddd;
+
+    text-align:center;
+
+}
+
+
+/* 표 내용 */
+
+.menu-table td{
+
+    padding:10px;
+
+    border:1px solid #ddd;
+
+    text-align:center;
+
+}
+
+
+/* ==========================
+   위치 정보
+
+   예)
+   📍 Banff Ave
+========================== */
+
+.location{
+
+    margin-bottom:18px;
+
+    font-size:.95rem;
+
+    color:#555;
+
+}
+
+
+/* ==========================
+   Google Maps 버튼
+
+   추후
+
+   공식 홈페이지
+
+   메뉴판
+
+   등도 같은 디자인 사용 가능
+========================== */
+
+.map-button{
+
+    display:inline-block;
+
+    background:#34a853;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+
+.map-button:hover{
+
+    background:#2a8744;
+
+}
+
+
+/* ==========================
+   뒤로가기 버튼
+
+   모든 지역 페이지 공통 사용
+
+   ← 맛집 목록
+========================== */
+
+.back-button{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:40px;
+
+    text-decoration:none;
+
+    background:#666;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+
+.back-button:hover{
+
+    background:#444;
+
+}
+
+/* ==========================
+   위치 제목
+
+   시외 지역(Bow Lake 등)을
+   구분하는 제목 카드
+
+========================== */
+
+.location-title{
+
+    background:#eaf4ff;
+
+    border-left:6px solid #2c7be5;
+
+    border-radius:10px;
+
+    padding:14px 18px;
+
+    margin:35px 0 20px;
+
+    font-size:1.25rem;
+
+    font-weight:bold;
+
+    color:#1d4f91;
+
+}
