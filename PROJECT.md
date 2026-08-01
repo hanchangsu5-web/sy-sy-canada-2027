@@ -32,3 +32,17 @@
   영어회화, 맛집, 트래킹, 여행지도. 가계부
 
 Day에서는 링크만 연결한다.
+
+
+## 2026-08-01
+### Progress
+
+- Banff restaurant page completed
+- Lake Louise restaurant page completed
+- Restaurant pages now available:
+  - Yoho
+  - Canmore
+  - Banff
+  - Lake Louise
+
+  
