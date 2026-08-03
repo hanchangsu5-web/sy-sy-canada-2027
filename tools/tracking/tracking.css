@@ -1,0 +1,1169 @@
+/* ==========================================================
+   Tracking CSS
+   Part 1
+   공통 레이아웃 / 제목 / 카드
+   ========================================================== */
+
+
+/* ===========================
+   1. 기본 설정
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ===========================
+   2. 컨테이너
+=========================== */
+
+/*
+   모든 페이지의 기본 영역
+
+   최대폭을 너무 넓게 하지 않아
+   모바일과 PC 모두 보기 좋게 설정
+*/
+.container {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 25px 18px 40px;
+
+}
+
+
+/* ===========================
+   3. 페이지 제목
+=========================== */
+
+.page-title {
+
+    text-align: center;
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+    color: #1f2937;
+
+    margin-bottom: 10px;
+
+}
+
+.page-subtitle {
+
+    text-align: center;
+
+    color: #6b7280;
+
+    font-size: 1rem;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ===========================
+   4. 구분선
+=========================== */
+
+.divider {
+
+    border: none;
+
+    border-top: 1px solid #dcdcdc;
+
+    margin: 28px 0;
+
+}
+
+
+/* ===========================
+   5. 공통 카드
+=========================== */
+
+/*
+   프로젝트에서 가장 많이 사용하는 카드
+
+   - 장소 카드
+   - 정보 카드
+   - 코스 카드
+
+   모두 이 스타일을 기반으로 사용
+*/
+
+.card {
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    margin-bottom: 18px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+
+    transition: .25s;
+
+}
+
+
+/*
+   마우스를 올리면 살짝 떠오르는 효과
+*/
+
+.card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 14px rgba(0,0,0,.12);
+
+}
+
+
+/* ===========================
+   6. 카드 제목
+=========================== */
+
+.card-title {
+
+    font-size: 1.25rem;
+
+    font-weight: bold;
+
+    color: #1f2937;
+
+    margin-bottom: 4px;
+
+}
+
+.card-subtitle {
+
+    color: #666;
+
+    font-size: .95rem;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* ===========================
+   7. 한 줄 추천 문구
+=========================== */
+
+.recommend {
+
+    color: #0f766e;
+
+    font-weight: 600;
+
+    font-size: .98rem;
+
+}
+
+
+/* ===========================
+   8. 섹션 제목
+=========================== */
+
+/*
+   예)
+
+   📏 기본 정보
+
+   🎒 준비물
+
+   💡 여행 Tip
+
+*/
+
+.section-title {
+
+    font-size: 1.15rem;
+
+    font-weight: bold;
+
+    color: #1f2937;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ===========================
+   9. 공통 여백
+=========================== */
+
+.mt10 {
+
+    margin-top: 10px;
+
+}
+
+.mt20 {
+
+    margin-top: 20px;
+
+}
+
+.mt30 {
+
+    margin-top: 30px;
+
+}
+
+.mb10 {
+
+    margin-bottom: 10px;
+
+}
+
+.mb20 {
+
+    margin-bottom: 20px;
+
+}
+
+.mb30 {
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ===========================
+   10. 링크 기본 설정
+=========================== */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+/* ==========================================================
+   Tracking CSS
+   Part 2
+   대표 이미지 / 정보카드 / 코스카드 / 배지
+   ========================================================== */
+
+
+/* ===========================
+   11. 대표 이미지
+=========================== */
+
+/*
+   모든 장소 페이지에서 사용하는 대표 사진
+
+   16:9 비율 고정
+*/
+
+.track-image {
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ===========================
+   12. 정보 카드 영역
+=========================== */
+
+/*
+   거리 / 시간 / 난이도 등을
+   작은 카드 형태로 출력
+*/
+
+.info-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(170px,1fr));
+
+    gap: 15px;
+
+}
+
+
+/* ===========================
+   13. 정보 카드
+=========================== */
+
+.info-box {
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    border: 1px solid #e6e6e6;
+
+}
+
+
+/*
+   정보 제목
+
+   예)
+
+   📏 거리
+
+   ⏱ 소요시간
+
+*/
+
+.info-title {
+
+    font-size: .92rem;
+
+    color: #6b7280;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+}
+
+
+/*
+   정보 값
+
+   예)
+
+   왕복 7.4km
+
+*/
+
+.info-value {
+
+    font-size: 1.05rem;
+
+    font-weight: bold;
+
+    color: #1f2937;
+
+}
+
+
+/* ===========================
+   14. 일반 리스트
+=========================== */
+
+.info-list {
+
+    list-style: none;
+
+    padding-left: 0;
+
+}
+
+.info-list li {
+
+    margin-bottom: 8px;
+
+}
+
+
+/* ===========================
+   15. 기대 풍경
+=========================== */
+
+.scenery-list {
+
+    list-style: none;
+
+    padding-left: 0;
+
+}
+
+.scenery-list li {
+
+    margin-bottom: 8px;
+
+}
+
+
+/* ===========================
+   16. 준비물
+=========================== */
+
+.check-list {
+
+    list-style: none;
+
+    padding-left: 0;
+
+}
+
+.check-list li {
+
+    margin-bottom: 8px;
+
+}
+
+
+/* ===========================
+   17. 여행 Tip 박스
+=========================== */
+
+.tip-box {
+
+    background: #fff8e8;
+
+    border-left: 5px solid #f4b400;
+
+    padding: 16px;
+
+    border-radius: 10px;
+
+    margin-top: 15px;
+
+}
+
+
+/* ===========================
+   18. 코스 선택 카드
+=========================== */
+
+/*
+   선택형 페이지
+
+   예)
+
+   Lake Agnes
+
+   Big Beehive
+
+*/
+
+.course-card {
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    transition: .25s;
+
+    cursor: pointer;
+
+}
+
+
+.course-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 14px rgba(0,0,0,.10);
+
+}
+
+
+/* 코스 제목 */
+
+.course-title {
+
+    font-size: 1.15rem;
+
+    font-weight: bold;
+
+    color: #1f2937;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* 코스 설명 */
+
+.course-summary {
+
+    color: #666;
+
+    font-size: .95rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ===========================
+   19. 코스 정보
+=========================== */
+
+/*
+   🚶 7.4km
+
+   ⏱ 3시간
+
+   💪 보통
+
+*/
+
+.course-info {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.course-info span {
+
+    background: #f3f4f6;
+
+    border-radius: 20px;
+
+    padding: 6px 12px;
+
+    font-size: .9rem;
+
+}
+
+
+/* ===========================
+   20. 추천 배지
+=========================== */
+
+.badge {
+
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: .82rem;
+
+    font-weight: bold;
+
+}
+
+
+/* 우리 일정 */
+
+.badge-recommend {
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+}
+
+
+/* 시간 여유 */
+
+.badge-option {
+
+    background: #fef3c7;
+
+    color: #92400e;
+
+}
+
+
+/* 코스 개수 */
+
+.badge-course {
+
+    background: #dcfce7;
+
+    color: #166534;
+
+}
+
+
+/* ===========================
+   21. 난이도
+=========================== */
+
+.easy {
+
+    color: #16a34a;
+
+    font-weight: bold;
+
+}
+
+.medium {
+
+    color: #d97706;
+
+    font-weight: bold;
+
+}
+
+.hard {
+
+    color: #dc2626;
+
+    font-weight: bold;
+
+}
+
+/* ==========================================================
+   Tracking CSS
+   Part 3
+   버튼 / 메인목록 / 뒤로가기 / 공통 유틸리티
+   ========================================================== */
+
+
+/* ===========================
+   22. 메인 장소 카드
+=========================== */
+
+/*
+   index.html에서 사용하는 카드
+
+   설퍼산
+   존스턴
+   레이크루이스
+   ...
+*/
+
+.track-card {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    transition: .25s;
+
+    cursor: pointer;
+
+}
+
+
+.track-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 14px rgba(0,0,0,.10);
+
+}
+
+
+/* ===========================
+   23. 카드 왼쪽
+=========================== */
+
+.track-left {
+
+    flex: 1;
+
+}
+
+.track-name {
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+
+    color: #1f2937;
+
+    margin-bottom: 4px;
+
+}
+
+.track-eng {
+
+    color: #777;
+
+    font-size: .92rem;
+
+    margin-bottom: 10px;
+
+}
+
+.track-desc {
+
+    color: #0f766e;
+
+    font-weight: 600;
+
+    font-size: .95rem;
+
+}
+
+
+/* ===========================
+   24. 카드 오른쪽
+=========================== */
+
+.track-right {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 10px;
+
+}
+
+
+/*
+   >
+*/
+
+.arrow {
+
+    font-size: 1.6rem;
+
+    color: #999;
+
+}
+
+
+/* ===========================
+   25. Google Maps 버튼
+=========================== */
+
+.map-button {
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    margin-top: 25px;
+
+    transition: .25s;
+
+}
+
+
+.map-button:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+/* ===========================
+   26. 트래킹 코스 버튼
+=========================== */
+
+/*
+   실제 등산로 확인용
+
+   Google Maps 트래킹
+*/
+
+.trail-button {
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+    background: #15803d;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+    transition: .25s;
+
+}
+
+
+.trail-button:hover {
+
+    background: #166534;
+
+}
+
+
+/* ===========================
+   27. 뒤로가기 버튼
+=========================== */
+
+.back-button {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+}
+
+
+.back-button:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* ===========================
+   28. 작은 안내 박스
+=========================== */
+
+/*
+   우리 일정
+
+   Day2 오후
+
+*/
+
+.notice-box {
+
+    background: #eef6ff;
+
+    border-left: 5px solid #3b82f6;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ===========================
+   29. 카드 내부 간격
+=========================== */
+
+.space-top {
+
+    margin-top: 20px;
+
+}
+
+.space-bottom {
+
+    margin-bottom: 20px;
+
+}
+
+.center {
+
+    text-align: center;
+
+}
+
+
+/* ===========================
+   30. 숨김
+=========================== */
+
+.hidden {
+
+    display: none;
+
+}
+
+/* ==========================================================
+   Tracking CSS
+   Part 4
+   반응형 / 마무리
+   ========================================================== */
+
+
+/* ===========================
+   31. 이미지 공통
+=========================== */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+
+/* ===========================
+   32. 긴 제목 자동 줄바꿈
+=========================== */
+
+h1,
+h2,
+h3,
+.card-title,
+.course-title,
+.track-name{
+
+    word-break:keep-all;
+
+    overflow-wrap:break-word;
+
+}
+
+
+/* ===========================
+   33. 카드 마지막 여백 제거
+=========================== */
+
+.card:last-child,
+.course-card:last-child,
+.track-card:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+/* ===========================
+   34. 버튼 클릭 효과
+=========================== */
+
+.map-button,
+.trail-button,
+.back-button{
+
+    transition:.25s;
+
+}
+
+.map-button:active,
+.trail-button:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* ===========================
+   35. 모바일
+=========================== */
+
+@media (max-width:768px){
+
+    .container{
+
+        padding:18px 14px 30px;
+
+    }
+
+    .page-title{
+
+        font-size:1.7rem;
+
+    }
+
+    .page-subtitle{
+
+        font-size:.95rem;
+
+    }
+
+    .track-name{
+
+        font-size:1.05rem;
+
+    }
+
+    .track-eng{
+
+        font-size:.82rem;
+
+    }
+
+    .card-title{
+
+        font-size:1.1rem;
+
+    }
+
+    .course-title{
+
+        font-size:1.05rem;
+
+    }
+
+    .course-info{
+
+        gap:8px;
+
+    }
+
+    .course-info span{
+
+        font-size:.82rem;
+
+        padding:5px 10px;
+
+    }
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* ===========================
+   36. 아주 작은 화면
+=========================== */
+
+@media (max-width:480px){
+
+    .track-card{
+
+        padding:15px;
+
+    }
+
+    .card{
+
+        padding:15px;
+
+    }
+
+    .course-card{
+
+        padding:15px;
+
+    }
+
+    .arrow{
+
+        font-size:1.3rem;
+
+    }
+
+    .map-button,
+    .trail-button{
+
+        padding:13px;
+
+        font-size:.95rem;
+
+    }
+
+}
+
+.track-desc{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+}
+
+.arrow{
+
+    font-size:1.6rem;
+
+    color:#999;
+
+    font-weight:bold;
+
+}
+
+
+/* ===========================
+   End
+=========================== */
+
+/*
+
+Tracking CSS
+
+사용 페이지
+
+✔ index
+
+✔ 설퍼산
+
+✔ 존스턴
+
+✔ 레이크루이스
+
+✔ 모레인
+
+✔ 마블캐년
+
+✔ 93번국도
+
+✔ 에메랄드호수
+
+✔ 그래시레이크
+
+✔ 션샤인매도우
+
+✔ 모든 상세 트래킹 페이지
+
+*/
