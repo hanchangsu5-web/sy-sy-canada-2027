@@ -71,20 +71,16 @@ Google Maps 버튼은 아래 형식을 사용한다.
 
 ---
 
-# 다음 작업
+# 작업 기록 (2026-08-03)
 
-Restaurants 리뉴얼 완료
+## 완료
 
-Tools 개발 시작
-
-순서
-
-1. 트래킹
-2. 영어회화
-3. 여행지도
-4. 가계부
-
----
+### 트래킹 상세 페이지 완료
+- Emerald Lake
+- Sunshine Meadows (4개 코스 구성)
+- Grassi Lakes
+- Marble Canyon
+- Highway 93 Scenic Stops
 
 # 코딩 스타일
 
@@ -95,7 +91,23 @@ Tools 개발 시작
 - 복붙하기 쉽게 코드 제공
 - 긴 코드는 여러 부로 분할
 
-  
+  ## 다음 작업
+
+### 여행도구 > 지도(Map)
+
+Google My Maps를 활용하여 여행 전용 지도를 제작한다.
+
+예정 내용
+- Google My Maps 사용법 익히기
+- 여행 일정별 레이어 구성
+- 관광지, 숙소, 식당, 주차장, 마트 등 분류
+- 동선 및 이동 경로 정리
+- 웹앱(Map 메뉴)과 연동 방식 검토
+
+
+
+
+
 
   voucher/images/ 파일명
 
