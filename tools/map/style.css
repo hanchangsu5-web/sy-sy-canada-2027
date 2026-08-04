@@ -1,0 +1,277 @@
+/* =========================================================
+   SY & SY Canada 2027
+   MAP STYLE
+========================================================= */
+
+/* ===== 기본 설정 ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+    background: #f6f8fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ===== 공통 컨테이너 ===== */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 18px 60px;
+}
+
+
+/* ===== 페이지 상단 ===== */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* =========================================================
+   ===== 공통 카드 =====
+========================================================= */
+
+.card {
+    position: relative;
+
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+/* ===== 카드 제목 ===== */
+
+.card h2 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   ===== 클릭 가능한 카드 =====
+========================================================= */
+
+.card-link {
+    display: block;
+    color: inherit;
+}
+
+.card-link:hover {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   ===== 화살표 =====
+========================================================= */
+
+.arrow {
+
+    position: absolute;
+
+    right: 22px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 54px;
+
+    height: 54px;
+
+    border-radius: 50%;
+
+    background: #eef5ff;
+
+    color: #0d6efd;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+    transition: 0.25s;
+
+}
+
+.card:hover .arrow {
+
+    background: #dbeafe;
+
+    transform: translateY(-50%) scale(1.08);
+
+}
+
+/* =========================================================
+   ===== 설명 텍스트 =====
+========================================================= */
+
+.description {
+    color: #666;
+    line-height: 1.8;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   ===== 지도 열기 버튼 =====
+========================================================= */
+
+.map-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 22px;
+    border-radius: 10px;
+    background: #0d6efd;
+    color: white;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.map-button:hover {
+    background: #0b5ed7;
+}
+
+
+/* =========================================================
+   ===== Day 카드 =====
+========================================================= */
+
+.day-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.day-route {
+    color: #0d6efd;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   ===== 구분선 =====
+========================================================= */
+
+.section-divider {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* =========================================================
+   ===== Footer =====
+========================================================= */
+
+.footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+
+/* =========================================================
+   ===== 공통 여백 =====
+========================================================= */
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   ===== 모바일 =====
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 20px 15px 40px;
+    }
+
+    .page-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .card h2 {
+        font-size: 1.25rem;
+    }
+
+    .day-title {
+        font-size: 1.15rem;
+    }
+
+    .map-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+}
