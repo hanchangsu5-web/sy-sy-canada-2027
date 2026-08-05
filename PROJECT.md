@@ -73,36 +73,34 @@ Google Maps 버튼은 아래 형식을 사용한다.
 
 # 작업 기록 (2026-08-03)
 
-## 완료
+## 이전 작업 요약
 
-### 트래킹 상세 페이지 완료
-- Emerald Lake
-- Sunshine Meadows (4개 코스 구성)
-- Grassi Lakes
-- Marble Canyon
-- Highway 93 Scenic Stops
+오늘 작업 완료
 
-# 코딩 스타일
+- Google My Maps를 Viewer 링크 방식으로 변경
+- google-mymaps-links.md 생성
+- 여행도구 > 지도(index) 완성
+- Day1~Day6 지도 버튼을 My Maps Viewer로 연결
+- Day1~Day6 맛집 카드를 지역별 맛집 페이지 링크로 변경
+- 맛집 페이지 구조 정리 및 중복 내용 일부 삭제
+- app.js / home.html 사용 여부 확인 및 프로젝트 구조 정리
+- Git 커밋 완료
 
-- 기존 파일 구조 유지
-- CSS는 기존 스타일 최대한 재사용
-- HTML은 주석 포함
-- 디자인 통일
-- 복붙하기 쉽게 코드 제공
-- 긴 코드는 여러 부로 분할
+## 다음 작업
 
-  ## 다음 작업
+사진/메모 기능(Firebase)
 
-### 여행도구 > 지도(Map)
+목표
+- Firebase 프로젝트 생성
+- Firestore / Storage 구조 설계
+- 사진 업로드
+- 메모 작성
+- 가족 간 실시간 공유
+- 사진 좋아요(❤️)
+- 익명 인기투표
+- TOP3 자동 집계 및 시상 기능
 
-Google My Maps를 활용하여 여행 전용 지도를 제작한다.
-
-예정 내용
-- Google My Maps 사용법 익히기
-- 여행 일정별 레이어 구성
-- 관광지, 숙소, 식당, 주차장, 마트 등 분류
-- 동선 및 이동 경로 정리
-- 웹앱(Map 메뉴)과 연동 방식 검토
+※ Firebase를 배우면서 재사용 가능한 구조로 구현한다.
 
 
 
